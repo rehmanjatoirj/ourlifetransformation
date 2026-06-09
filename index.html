@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Transformation Pakistan – Money Mastery Elite Membership</title>
+<title>Transformation Pakistan – Money Mastery Elite Academy</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -13,8 +13,6 @@ body{background:var(--black);color:var(--white);font-family:'Rajdhani',sans-seri
 #cur{position:fixed;width:10px;height:10px;background:var(--yellow);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:screen}
 #cur2{position:fixed;width:35px;height:35px;border:1px solid rgba(255,215,0,.4);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:left .08s,top .08s}
 canvas#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
-
-/* NAV */
 nav{position:fixed;top:0;width:100%;z-index:200;display:flex;justify-content:space-between;align-items:center;padding:1rem 4rem;background:rgba(10,10,10,.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,215,0,.15)}
 .logo{font-family:'Orbitron',monospace;font-size:.85rem;color:var(--yellow);letter-spacing:2px;text-shadow:0 0 20px rgba(255,215,0,.6);line-height:1.3}
 .logo span{display:block;font-size:.55rem;color:var(--pink);letter-spacing:3px}
@@ -23,8 +21,6 @@ nav{position:fixed;top:0;width:100%;z-index:200;display:flex;justify-content:spa
 .nav-links a:hover{color:var(--yellow)}
 .nav-btn{background:linear-gradient(135deg,var(--yellow),#ffaa00);color:#000;padding:.6rem 1.8rem;border:none;font-family:'Orbitron',monospace;font-weight:700;font-size:.7rem;letter-spacing:2px;text-transform:uppercase;cursor:pointer;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);transition:all .3s;white-space:nowrap}
 .nav-btn:hover{box-shadow:0 0 25px rgba(255,215,0,.6);transform:translateY(-2px)}
-
-/* HERO */
 #hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8rem 2rem 4rem;z-index:1;overflow:hidden}
 .circuit{position:absolute;inset:0;opacity:.06;background-image:linear-gradient(rgba(255,215,0,.8) 1px,transparent 1px),linear-gradient(90deg,rgba(255,215,0,.8) 1px,transparent 1px);background-size:45px 45px}
 .g1{position:absolute;width:700px;height:700px;background:radial-gradient(circle,rgba(255,0,110,.07),transparent 65%);top:0;left:0;animation:orbf 8s ease-in-out infinite;pointer-events:none}
@@ -40,14 +36,11 @@ h1.hero-title{font-family:'Orbitron',monospace;font-weight:900;line-height:1.05;
 @keyframes glitch{0%,88%,100%{transform:none}90%{transform:skewX(-4deg);text-shadow:3px 0 var(--yellow),-3px 0 var(--cyan)}93%{transform:skewX(3deg)}95%{transform:none}}
 .hero-sub{font-size:1.05rem;max-width:650px;line-height:1.9;color:rgba(255,255,255,.7);margin:1.5rem 0 2rem;opacity:0;animation:fu .7s .9s forwards}
 .hero-sub strong{color:#fff}
-
-/* URGENT BADGE */
 .urgent{display:inline-flex;align-items:center;gap:.8rem;background:linear-gradient(135deg,rgba(255,0,110,.15),rgba(255,215,0,.1));border:1px solid var(--pink);padding:.6rem 2rem;margin-bottom:2rem;opacity:0;animation:fu .7s 1s forwards}
 .urgent-dot{width:8px;height:8px;background:var(--pink);border-radius:50%;animation:blink 1s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 .urgent span{font-family:'Orbitron',monospace;font-size:.65rem;letter-spacing:3px;color:var(--pink);text-transform:uppercase}
 .urgent strong{color:var(--yellow)}
-
 .pills{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center;margin-bottom:2.5rem;opacity:0;animation:fu .7s 1.1s forwards}
 .pill{padding:.4rem 1.2rem;font-size:.7rem;letter-spacing:2px;text-transform:uppercase;font-family:'Orbitron',monospace}
 .py{border:1px solid var(--yellow);color:var(--yellow);background:rgba(255,215,0,.07)}
@@ -58,14 +51,10 @@ h1.hero-title{font-family:'Orbitron',monospace;font-weight:900;line-height:1.05;
 .btn-y:hover{box-shadow:0 0 35px rgba(255,215,0,.6);transform:translateY(-3px)}
 .btn-p{background:transparent;color:var(--pink);padding:1rem 3rem;border:1px solid var(--pink);font-family:'Orbitron',monospace;font-weight:700;font-size:.8rem;letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:all .3s}
 .btn-p:hover{background:rgba(255,0,110,.1);box-shadow:0 0 25px rgba(255,0,110,.4);transform:translateY(-3px)}
-
-/* TICKER */
 .ticker{background:linear-gradient(90deg,rgba(255,0,110,.12),rgba(255,215,0,.12),rgba(0,255,255,.08));border-top:1px solid rgba(255,215,0,.2);border-bottom:1px solid rgba(255,215,0,.2);padding:.8rem 0;overflow:hidden;position:relative;z-index:1}
 .ticker-wrap{display:flex;width:max-content;animation:tick 25s linear infinite}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .ti{font-family:'Orbitron',monospace;font-size:.6rem;letter-spacing:3px;color:var(--yellow);padding:.3rem 2rem;border-right:1px solid rgba(255,215,0,.12);white-space:nowrap;text-transform:uppercase}
-
-/* STATS */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);background:#0D0D0D;border-bottom:1px solid rgba(255,215,0,.08);position:relative;z-index:1}
 .stat{text-align:center;padding:2.5rem 1rem;border-right:1px solid rgba(255,215,0,.06);transition:background .4s;position:relative;overflow:hidden}
 .stat::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--pink),var(--yellow));transform:scaleX(0);transition:transform .4s}
@@ -73,8 +62,6 @@ h1.hero-title{font-family:'Orbitron',monospace;font-weight:900;line-height:1.05;
 .stat:last-child{border-right:none}
 .sn{font-family:'Orbitron',monospace;font-size:2.2rem;font-weight:900;color:var(--yellow);display:block;text-shadow:0 0 20px rgba(255,215,0,.5)}
 .sl{font-size:.7rem;letter-spacing:2px;color:rgba(255,255,255,.5);text-transform:uppercase;margin-top:.4rem;display:block}
-
-/* SECTIONS */
 section{position:relative;z-index:1;padding:6rem 4rem}
 .s-tag{font-family:'Orbitron',monospace;font-size:.6rem;letter-spacing:5px;color:var(--pink);text-transform:uppercase;display:flex;align-items:center;gap:.8rem;margin-bottom:.8rem}
 .s-tag::before{content:'>>>';color:var(--yellow);font-size:.7rem}
@@ -86,7 +73,31 @@ section{position:relative;z-index:1;padding:6rem 4rem}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
-/* MONEY MASTERY SUPER SKILLS — HIGHLIGHT */
+/* LEGENDS */
+#legends{background:#0D0D0D;text-align:center}
+.legends-intro{font-size:1.05rem;color:rgba(255,255,255,.7);max-width:700px;margin:0 auto 3rem;line-height:1.9}
+.legends-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem;margin-top:2rem}
+.legend-card{background:var(--card);border:1px solid rgba(255,215,0,.15);padding:2rem 1rem;text-align:center;transition:all .4s;position:relative;overflow:hidden}
+.legend-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--yellow),var(--pink));transform:scaleX(0);transition:transform .5s}
+.legend-card:hover::before{transform:scaleX(1)}
+.legend-card:hover{transform:translateY(-10px);border-color:rgba(255,215,0,.5);box-shadow:0 20px 60px rgba(255,215,0,.15)}
+.legend-portrait{width:90px;height:90px;border-radius:50%;margin:0 auto 1rem;border:2px solid rgba(255,215,0,.4);display:block;overflow:hidden;background:#1a1a1a}
+.legend-name{font-family:'Orbitron',monospace;font-size:.72rem;font-weight:700;color:var(--yellow);margin-bottom:.3rem;letter-spacing:1px}
+.legend-title{font-size:.73rem;color:rgba(255,255,255,.45);line-height:1.4;margin-bottom:.5rem}
+.legend-quote{font-size:.75rem;color:rgba(255,215,0,.65);font-style:italic;line-height:1.5;padding:0 .2rem}
+
+/* MINDSET */
+#mindset{background:var(--black)}
+.mindset-wrap{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.mindset-desc{font-size:1rem;color:rgba(255,255,255,.7);line-height:1.9;margin-bottom:2rem}
+.feat-list{list-style:none}
+.feat-list li{font-size:.95rem;color:#fff;padding:.6rem 0;border-bottom:1px solid rgba(255,215,0,.08);display:flex;align-items:center;gap:.8rem}
+.feat-list li::before{content:'✓';color:var(--yellow);font-weight:900;text-shadow:0 0 10px rgba(255,215,0,.6)}
+.mindset-right{display:flex;align-items:center;justify-content:center}
+.brain-visual{font-size:10rem;filter:drop-shadow(0 0 40px rgba(255,0,110,.6));animation:brainpulse 3s ease-in-out infinite}
+@keyframes brainpulse{0%,100%{filter:drop-shadow(0 0 40px rgba(255,0,110,.6))}50%{filter:drop-shadow(0 0 80px rgba(255,215,0,.8))}}
+
+/* SUPER SKILLS */
 #superskills{background:#0D0D0D;padding:6rem 4rem}
 .ss-wrap{background:linear-gradient(135deg,rgba(255,215,0,.06),rgba(255,0,110,.04));border:1px solid rgba(255,215,0,.3);padding:4rem;position:relative;overflow:hidden}
 .ss-wrap::before{content:'';position:absolute;top:-50%;right:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(255,215,0,.08),transparent 65%);pointer-events:none}
@@ -102,7 +113,7 @@ section{position:relative;z-index:1;padding:6rem 4rem}
 .ss-item-icon{font-size:1.8rem;display:block;margin-bottom:.5rem}
 .ss-item-name{font-family:'Orbitron',monospace;font-size:.65rem;letter-spacing:2px;color:var(--yellow);text-transform:uppercase}
 
-/* COURSES GRID */
+/* COURSES */
 #courses{background:var(--black)}
 .courses-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
 .course-card{background:var(--card);border:1px solid rgba(255,255,255,.08);padding:2rem;transition:all .4s;position:relative;overflow:hidden}
@@ -113,21 +124,68 @@ section{position:relative;z-index:1;padding:6rem 4rem}
 .c-name{font-family:'Orbitron',monospace;font-size:.9rem;font-weight:700;color:var(--yellow);margin-bottom:.5rem}
 .c-desc{font-size:.85rem;color:rgba(255,255,255,.6);line-height:1.7}
 
-/* BOOKS SECTION */
-#books{background:#0D0D0D}
+/* FREE RESOURCES */
+#free-resources{background:#0D0D0D}
+.res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.res-card{background:var(--card);border:1px solid rgba(0,255,255,.15);padding:2.5rem 2rem;position:relative;overflow:hidden;transition:all .4s}
+.res-card::before{content:'FREE';position:absolute;top:-10px;right:-15px;font-family:'Orbitron',monospace;font-size:4rem;font-weight:900;color:rgba(0,255,255,.04);pointer-events:none}
+.res-card:hover{transform:translateY(-8px);border-color:var(--cyan);box-shadow:0 20px 60px rgba(0,255,255,.1)}
+.res-icon{font-size:2.5rem;display:block;margin-bottom:1rem}
+.res-count{font-family:'Orbitron',monospace;font-size:2rem;font-weight:900;color:var(--cyan);text-shadow:0 0 20px rgba(0,255,255,.5);display:block;margin-bottom:.3rem}
+.res-name{font-family:'Orbitron',monospace;font-size:.85rem;font-weight:700;color:#fff;margin-bottom:.5rem;letter-spacing:1px}
+.res-desc{font-size:.85rem;color:rgba(255,255,255,.6);line-height:1.7}
+.res-tag{display:inline-block;background:rgba(0,255,255,.1);border:1px solid rgba(0,255,255,.3);color:var(--cyan);font-family:'Orbitron',monospace;font-size:.55rem;letter-spacing:2px;padding:.2rem .6rem;margin-top:.8rem;text-transform:uppercase}
+
+/* BOOKS */
+#books{background:var(--black)}
 .books-wrap{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
 .books-visual{text-align:center}
 .books-big{font-family:'Orbitron',monospace;font-size:clamp(3rem,10vw,8rem);font-weight:900;color:transparent;-webkit-text-stroke:2px var(--yellow);text-shadow:0 0 60px rgba(255,215,0,.3);line-height:1;animation:glow 2s ease-in-out infinite}
 @keyframes glow{0%,100%{text-shadow:0 0 40px rgba(255,215,0,.3)}50%{text-shadow:0 0 80px rgba(255,215,0,.6),0 0 30px rgba(255,0,110,.3)}}
 .books-sub{font-family:'Orbitron',monospace;font-size:.7rem;letter-spacing:4px;color:var(--pink);margin-top:.5rem}
-.books-content .feat-list{list-style:none}
-.feat-list li{font-size:.95rem;color:#fff;padding:.6rem 0;border-bottom:1px solid rgba(255,215,0,.08);display:flex;align-items:center;gap:.8rem}
-.feat-list li::before{content:'✓';color:var(--yellow);font-weight:900;text-shadow:0 0 10px rgba(255,215,0,.6)}
+
+/* BEST SELLERS */
+#bestsellers{background:#0D0D0D}
+.bs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.bs-card{background:var(--card);border:1px solid rgba(255,255,255,.08);overflow:hidden;position:relative;transition:all .5s}
+.bs-card:hover{transform:translateY(-12px)}
+.bs-card.card1:hover{border-color:var(--yellow);box-shadow:0 30px 80px rgba(255,215,0,.15)}
+.bs-card.card2:hover{border-color:var(--pink);box-shadow:0 30px 80px rgba(255,0,110,.15)}
+.bs-card.card3:hover{border-color:var(--cyan);box-shadow:0 30px 80px rgba(0,255,255,.15)}
+.bs-top{padding:2.5rem 2rem 1.5rem;position:relative}
+.bs-badge{position:absolute;top:1rem;right:1rem;font-family:'Orbitron',monospace;font-size:.55rem;letter-spacing:2px;padding:.3rem .7rem;text-transform:uppercase;font-weight:700}
+.badge-y{background:var(--yellow);color:#000}
+.badge-p{background:var(--pink);color:#fff}
+.badge-c{background:var(--cyan);color:#000}
+.bs-icon{font-size:3rem;display:block;margin-bottom:1rem}
+.bs-name{font-family:'Orbitron',monospace;font-size:1rem;font-weight:700;margin-bottom:.5rem}
+.bs-feat{list-style:none;padding:0 2rem 1.5rem;border-bottom:1px solid rgba(255,255,255,.06)}
+.bs-feat li{font-size:.85rem;color:rgba(255,255,255,.7);padding:.4rem 0;display:flex;align-items:center;gap:.6rem}
+.bs-feat li::before{content:'▸';font-size:.7rem}
+.card1 .bs-feat li::before{color:var(--yellow)}
+.card2 .bs-feat li::before{color:var(--pink)}
+.card3 .bs-feat li::before{color:var(--cyan)}
+.bs-btn{width:100%;border:none;font-family:'Orbitron',monospace;font-weight:700;font-size:.75rem;letter-spacing:3px;text-transform:uppercase;cursor:pointer;padding:1rem;transition:all .3s;margin-top:1.5rem;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+.btn-ey{background:linear-gradient(135deg,var(--yellow),#ffaa00);color:#000}
+.btn-ep{background:linear-gradient(135deg,var(--pink),#aa0047);color:#fff}
+.btn-ec{background:linear-gradient(135deg,var(--cyan),#00aaaa);color:#000}
+.bs-btn:hover{transform:scale(1.03);filter:brightness(1.15)}
+
+/* VIDEOS */
+#videos{background:var(--black);text-align:center}
+.big-num{font-family:'Orbitron',monospace;font-size:clamp(5rem,15vw,12rem);font-weight:900;color:transparent;-webkit-text-stroke:2px var(--yellow);line-height:1;margin-bottom:1rem;animation:numglow 2s ease-in-out infinite}
+@keyframes numglow{0%,100%{text-shadow:0 0 60px rgba(255,215,0,.3)}50%{text-shadow:0 0 100px rgba(255,215,0,.6)}}
+.vid-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.vid-card{background:var(--card);border:1px solid rgba(255,215,0,.15);padding:2rem;text-align:center;transition:all .4s}
+.vid-card:hover{border-color:var(--yellow);box-shadow:0 0 40px rgba(255,215,0,.15);transform:translateY(-8px)}
+.vid-icon{font-size:2.5rem;margin-bottom:1rem;display:block}
+.vid-title{font-family:'Orbitron',monospace;font-size:.9rem;font-weight:700;color:var(--yellow);margin-bottom:.5rem}
+.vid-desc{font-size:.85rem;color:rgba(255,255,255,.6)}
 
 /* MEMBERSHIP */
-#membership{background:var(--black);text-align:center}
+#membership{background:#0D0D0D;text-align:center}
 .mem-urgent{display:inline-flex;align-items:center;gap:1rem;background:linear-gradient(135deg,rgba(255,0,110,.15),rgba(255,215,0,.1));border:2px solid var(--pink);padding:.8rem 2.5rem;margin-bottom:3rem;animation:memglow 2s ease-in-out infinite}
-@keyframes memglow{0%,100%{box-shadow:0 0 20px rgba(255,0,110,.3)}50%{box-shadow:0 0 50px rgba(255,0,110,.6),0 0 25px rgba(255,215,0,.3)}}
+@keyframes memglow{0%,100%{box-shadow:0 0 20px rgba(255,0,110,.3)}50%{box-shadow:0 0 50px rgba(255,0,110,.6)}}
 .mem-urgent-dot{width:10px;height:10px;background:var(--pink);border-radius:50%;animation:blink 1s infinite;flex-shrink:0}
 .mem-urgent-text{font-family:'Orbitron',monospace;font-size:.7rem;letter-spacing:3px;color:#fff;text-transform:uppercase}
 .mem-urgent-text strong{color:var(--yellow)}
@@ -136,7 +194,7 @@ section{position:relative;z-index:1;padding:6rem 4rem}
 .mem-card.silver{border:1px solid rgba(0,255,255,.3);animation:silverpulse 3s ease-in-out infinite}
 .mem-card.gold{border:2px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(135deg,var(--yellow),var(--pink),var(--cyan)) border-box;animation:goldpulse 2s ease-in-out infinite}
 @keyframes silverpulse{0%,100%{box-shadow:0 0 20px rgba(0,255,255,.1)}50%{box-shadow:0 0 50px rgba(0,255,255,.25)}}
-@keyframes goldpulse{0%,100%{box-shadow:0 0 30px rgba(255,215,0,.2)}50%{box-shadow:0 0 80px rgba(255,0,110,.3),0 0 50px rgba(255,215,0,.3)}}
+@keyframes goldpulse{0%,100%{box-shadow:0 0 30px rgba(255,215,0,.2)}50%{box-shadow:0 0 80px rgba(255,0,110,.3)}}
 .popular-badge{position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--yellow),var(--pink));color:#000;font-family:'Orbitron',monospace;font-size:.6rem;letter-spacing:2px;padding:.35rem 1.5rem;font-weight:700;text-transform:uppercase;white-space:nowrap}
 .mem-icon{font-size:3rem;display:block;margin-bottom:1rem}
 .mem-name{font-family:'Orbitron',monospace;font-size:1.3rem;font-weight:900;margin-bottom:.3rem}
@@ -144,9 +202,9 @@ section{position:relative;z-index:1;padding:6rem 4rem}
 .gold .mem-name{color:var(--yellow)}
 .mem-price-wrap{margin:1.2rem 0}
 .mem-price{font-family:'Orbitron',monospace;font-size:2.5rem;font-weight:900;line-height:1}
-.silver .mem-price{color:var(--cyan);text-shadow:0 0 20px rgba(0,255,255,.4)}
-.gold .mem-price{color:var(--yellow);text-shadow:0 0 20px rgba(255,215,0,.5)}
-.mem-price-note{font-size:.8rem;color:rgba(255,255,255,.5);letter-spacing:1px;margin-top:.3rem;display:block}
+.silver .mem-price{color:var(--cyan)}
+.gold .mem-price{color:var(--yellow)}
+.mem-price-note{font-size:.8rem;color:rgba(255,255,255,.5);margin-top:.3rem;display:block}
 .mem-after{font-size:.75rem;color:rgba(255,255,255,.4);margin-top:.3rem;display:block;font-style:italic}
 .mem-feats{list-style:none;margin:1.5rem 0}
 .mem-feats li{font-size:.88rem;color:rgba(255,255,255,.8);padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.05);display:flex;gap:.7rem;align-items:flex-start}
@@ -155,26 +213,25 @@ section{position:relative;z-index:1;padding:6rem 4rem}
 .mem-btn{width:100%;border:none;font-family:'Orbitron',monospace;font-weight:700;font-size:.8rem;letter-spacing:3px;text-transform:uppercase;cursor:pointer;padding:1.1rem;transition:all .3s;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);margin-top:.5rem}
 .silver .mem-btn{background:linear-gradient(135deg,var(--cyan),#00aaaa);color:#000}
 .gold .mem-btn{background:linear-gradient(135deg,var(--yellow),var(--pink));color:#000}
-.mem-btn:hover{filter:brightness(1.15);transform:scale(1.02);box-shadow:0 10px 30px rgba(255,215,0,.3)}
+.mem-btn:hover{filter:brightness(1.15);transform:scale(1.02)}
 
 /* CTA */
-#cta{background:#0D0D0D;text-align:center;padding:8rem 4rem;position:relative;overflow:hidden}
+#cta{background:var(--black);text-align:center;padding:8rem 4rem;position:relative;overflow:hidden}
 #cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(255,0,110,.07),transparent 60%)}
 .cta-t1{font-family:'Orbitron',monospace;font-size:clamp(1.5rem,5vw,3.5rem);font-weight:900;color:#fff;display:block}
-.cta-t2{font-family:'Orbitron',monospace;font-size:clamp(1.5rem,5vw,3.5rem);font-weight:900;color:var(--yellow);text-shadow:0 0 40px rgba(255,215,0,.5);display:block;margin-bottom:.5rem}
-.cta-t3{font-family:'Orbitron',monospace;font-size:clamp(1rem,2.5vw,2rem);color:var(--pink);display:block;margin-bottom:2rem;text-shadow:0 0 20px rgba(255,0,110,.4)}
+.cta-t2{font-family:'Orbitron',monospace;font-size:clamp(1.5rem,5vw,3.5rem);font-weight:900;color:var(--yellow);display:block;margin-bottom:.5rem}
+.cta-t3{font-family:'Orbitron',monospace;font-size:clamp(1rem,2.5vw,2rem);color:var(--pink);display:block;margin-bottom:2rem}
 .cta-sub{font-size:1rem;color:rgba(255,255,255,.6);margin-bottom:3rem;letter-spacing:1px}
 .countdown{display:flex;gap:1.5rem;justify-content:center;margin-bottom:3rem;flex-wrap:wrap}
 .cbox{background:rgba(255,215,0,.05);border:1px solid rgba(255,215,0,.2);padding:1.5rem 2rem;min-width:100px;position:relative}
 .cbox::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--pink),var(--yellow))}
-.cnum{font-family:'Orbitron',monospace;font-size:2.5rem;font-weight:900;color:var(--yellow);display:block;text-shadow:0 0 20px rgba(255,215,0,.5)}
+.cnum{font-family:'Orbitron',monospace;font-size:2.5rem;font-weight:900;color:var(--yellow);display:block}
 .clbl{font-size:.6rem;letter-spacing:3px;color:rgba(255,255,255,.5);text-transform:uppercase;margin-top:.3rem;display:block}
 .guarantee{font-size:.8rem;color:rgba(255,255,255,.4);margin-top:2rem;letter-spacing:1px}
 
-/* FOOTER */
 footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;position:relative;z-index:1}
 .foot-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2rem;margin-bottom:3rem}
-.foot-logo{font-family:'Orbitron',monospace;font-size:1rem;color:var(--yellow);text-shadow:0 0 15px rgba(255,215,0,.4);display:block;margin-bottom:.3rem}
+.foot-logo{font-family:'Orbitron',monospace;font-size:1rem;color:var(--yellow);display:block;margin-bottom:.3rem}
 .foot-logo span{display:block;font-size:.55rem;color:var(--pink);letter-spacing:3px;margin-top:2px}
 .foot-desc{font-size:.85rem;color:rgba(255,255,255,.4);max-width:220px;line-height:1.7;margin-top:.5rem}
 .foot-cols{display:flex;gap:4rem;flex-wrap:wrap}
@@ -190,13 +247,16 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
   section{padding:4rem 1.5rem}
   #superskills{padding:4rem 1.5rem}.ss-wrap{padding:2rem}
   .stats{grid-template-columns:repeat(2,1fr)}
-  .courses-grid{grid-template-columns:1fr}
-  .books-wrap{grid-template-columns:1fr}
+  .courses-grid,.bs-grid,.vid-grid,.res-grid{grid-template-columns:1fr}
+  .books-wrap,.mindset-wrap{grid-template-columns:1fr}
+  .brain-visual{font-size:6rem}
   .mem-grid{grid-template-columns:1fr}
   .ss-grid{grid-template-columns:repeat(2,1fr)}
+  .legends-grid{grid-template-columns:repeat(2,1fr)}
+  footer{padding:2.5rem 1.5rem}
   .foot-top{flex-direction:column}
   .foot-cols{gap:2rem}
-  footer{padding:2.5rem 1.5rem}
+  .foot-bottom{flex-direction:column;text-align:center}
 }
 </style>
 </head>
@@ -205,45 +265,36 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
 <div id="cur2"></div>
 <canvas id="bg"></canvas>
 
-<!-- NAV -->
 <nav>
-  <div class="logo">Transformation Pakistan
-    <span>Money Mastery Elite Academy</span>
-  </div>
+  <div class="logo">Transformation Pakistan<span>Money Mastery Elite Academy</span></div>
   <ul class="nav-links">
+    <li><a href="#legends">Legends</a></li>
     <li><a href="#superskills">Super Skills</a></li>
     <li><a href="#courses">Courses</a></li>
-    <li><a href="#membership">Membership</a></li>
-    <li><a href="#cta">Join Now</a></li>
+    <li><a href="#free-resources">Free Resources</a></li>
+    <li><a href="#membership">Join Now</a></li>
   </ul>
   <button class="nav-btn" onclick="document.getElementById('membership').scrollIntoView({behavior:'smooth'})">Join Elite →</button>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
   <div class="circuit"></div>
-  <div class="g1"></div>
-  <div class="g2"></div>
-
+  <div class="g1"></div><div class="g2"></div>
   <div class="hero-badge">>> Pakistan's #1 Money Mastery Academy 🇵🇰</div>
-
   <h1 class="hero-title">
     <span class="ht1">TRANSFORMATION</span>
     <span class="ht2">PAKISTAN</span>
     <span class="ht3">MONEY MASTERY COURSES</span>
   </h1>
-
   <div class="urgent">
     <div class="urgent-dot"></div>
     <span>🔥 <strong>ONE WEEK ONLY</strong> — Elite Membership Starting in Pakistan — <strong>PKR 1,500</strong></span>
   </div>
-
   <p class="hero-sub">
     <strong>Digital Marketing · Ecommerce · Amazon FBA · Ebay UK & Pakistan</strong><br>
     English Language · IELTS 8 Bands · Mind Control · Hypnosis<br>
     All in <strong>ONE Single Membership.</strong>
   </p>
-
   <div class="pills">
     <span class="pill py">Money Mastery</span>
     <span class="pill pp">15+ Hours English</span>
@@ -251,60 +302,100 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
     <span class="pill py">Mind Control</span>
     <span class="pill pp">120+ Videos</span>
   </div>
-
   <div class="hero-btns">
     <button class="btn-y" onclick="document.getElementById('membership').scrollIntoView({behavior:'smooth'})">Join For PKR 1,500 →</button>
     <button class="btn-p" onclick="document.getElementById('courses').scrollIntoView({behavior:'smooth'})">See All Courses</button>
   </div>
 </section>
 
-<!-- TICKER -->
 <div class="ticker">
   <div class="ticker-wrap">
-    <span class="ti">💰 Money Mastery</span>
-    <span class="ti">🌐 Digital Marketing</span>
-    <span class="ti">🛒 Ecommerce</span>
-    <span class="ti">📦 Amazon FBA</span>
-    <span class="ti">🇬🇧 Ebay UK & Pakistan</span>
-    <span class="ti">🗣️ English 15+ Hours</span>
-    <span class="ti">📚 IELTS 8 Bands</span>
-    <span class="ti">🧠 Mind Control</span>
-    <span class="ti">🔮 Hypnosis</span>
-    <span class="ti">🧘 Yoga</span>
-    <span class="ti">⚡ Dopamine Detox</span>
-    <span class="ti">🏆 Pakistan Elite 1%</span>
-    <span class="ti">💰 Money Mastery</span>
-    <span class="ti">🌐 Digital Marketing</span>
-    <span class="ti">🛒 Ecommerce</span>
-    <span class="ti">📦 Amazon FBA</span>
-    <span class="ti">🇬🇧 Ebay UK & Pakistan</span>
-    <span class="ti">🗣️ English 15+ Hours</span>
-    <span class="ti">📚 IELTS 8 Bands</span>
-    <span class="ti">🧠 Mind Control</span>
-    <span class="ti">🔮 Hypnosis</span>
-    <span class="ti">🧘 Yoga</span>
-    <span class="ti">⚡ Dopamine Detox</span>
-    <span class="ti">🏆 Pakistan Elite 1%</span>
+    <span class="ti">💰 Money Mastery</span><span class="ti">🌐 Digital Marketing</span><span class="ti">🛒 Ecommerce</span><span class="ti">📦 Amazon FBA</span><span class="ti">🇬🇧 Ebay UK & Pakistan</span><span class="ti">🗣️ English 15+ Hours</span><span class="ti">📚 IELTS 8 Bands</span><span class="ti">🧠 Mind Control</span><span class="ti">🔮 Hypnosis</span><span class="ti">🧘 Yoga</span><span class="ti">⚡ Dopamine Detox</span><span class="ti">📖 1700 Free Courses</span><span class="ti">🎨 13 Free Design Books</span><span class="ti">📝 70 Notion Templates</span><span class="ti">🏆 Pakistan Elite 1%</span>
+    <span class="ti">💰 Money Mastery</span><span class="ti">🌐 Digital Marketing</span><span class="ti">🛒 Ecommerce</span><span class="ti">📦 Amazon FBA</span><span class="ti">🇬🇧 Ebay UK & Pakistan</span><span class="ti">🗣️ English 15+ Hours</span><span class="ti">📚 IELTS 8 Bands</span><span class="ti">🧠 Mind Control</span><span class="ti">🔮 Hypnosis</span><span class="ti">🧘 Yoga</span><span class="ti">⚡ Dopamine Detox</span><span class="ti">📖 1700 Free Courses</span><span class="ti">🎨 13 Free Design Books</span><span class="ti">📝 70 Notion Templates</span><span class="ti">🏆 Pakistan Elite 1%</span>
   </div>
 </div>
 
-<!-- STATS -->
 <div class="stats reveal">
   <div class="stat"><span class="sn" data-t="120">0</span><span class="sl">Videos Available</span></div>
   <div class="stat"><span class="sn" data-t="15">0</span><span class="sl">Hours English Training</span></div>
   <div class="stat"><span class="sn" data-t="12000">0</span><span class="sl">Lives Transformed</span></div>
-  <div class="stat"><span class="sn" data-t="8">0</span><span class="sl">IELTS Bands Target</span></div>
+  <div class="stat"><span class="sn" data-t="1700">0</span><span class="sl">Free Online Courses</span></div>
 </div>
 
-<!-- MONEY MASTERY SUPER SKILLS HIGHLIGHT -->
+<!-- LEGENDS SECTION with Canvas Portraits -->
+<section id="legends">
+  <div class="s-tag reveal" style="justify-content:center">Learn From The Best</div>
+  <h2 class="s-title reveal" style="text-align:center">Billionaires Who <span class="y">Mastered</span> These <span class="p">Skills</span></h2>
+  <div class="s-line reveal" style="margin:0 auto 2rem"></div>
+  <p class="legends-intro reveal"><strong>Elon Musk. Bill Gates. Mark Zuckerberg. Steve Jobs. Jeff Bezos.</strong><br>They all mastered ONE thing the world never taught you — Money Mastery, Digital Business & Mind Control.<br>Now YOUR time through <strong>Transformation Pakistan.</strong></p>
+  <div class="legends-grid reveal">
+
+    <div class="legend-card">
+      <canvas class="legend-portrait" id="p1" width="90" height="90"></canvas>
+      <div class="legend-name">Elon Musk</div>
+      <div class="legend-title">Tesla · SpaceX · X</div>
+      <div class="legend-quote">"If something is important enough, even if the odds are against you, you should still do it."</div>
+    </div>
+
+    <div class="legend-card">
+      <canvas class="legend-portrait" id="p2" width="90" height="90"></canvas>
+      <div class="legend-name">Bill Gates</div>
+      <div class="legend-title">Microsoft · Philanthropist</div>
+      <div class="legend-quote">"It's fine to celebrate success but more important to heed the lessons of failure."</div>
+    </div>
+
+    <div class="legend-card">
+      <canvas class="legend-portrait" id="p3" width="90" height="90"></canvas>
+      <div class="legend-name">Mark Zuckerberg</div>
+      <div class="legend-title">Meta · Facebook · Instagram</div>
+      <div class="legend-quote">"The biggest risk is not taking any risk. Not taking risks is the strategy guaranteed to fail."</div>
+    </div>
+
+    <div class="legend-card">
+      <canvas class="legend-portrait" id="p4" width="90" height="90"></canvas>
+      <div class="legend-name">Steve Jobs</div>
+      <div class="legend-title">Apple · Pixar · NeXT</div>
+      <div class="legend-quote">"Stay hungry, stay foolish. Your work is going to fill a large part of your life."</div>
+    </div>
+
+    <div class="legend-card">
+      <canvas class="legend-portrait" id="p5" width="90" height="90"></canvas>
+      <div class="legend-name">Jeff Bezos</div>
+      <div class="legend-title">Amazon · Blue Origin</div>
+      <div class="legend-quote">"We are stubborn on vision. We are flexible on details. Invent your way out of any box."</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- MINDSET -->
+<section id="mindset">
+  <div class="mindset-wrap">
+    <div class="mindset-left">
+      <div class="s-tag reveal">Reprogram Your Mind</div>
+      <h2 class="s-title reveal">Millionaire <span class="y">Brain Waves</span><br>& <span class="p">Mindset</span></h2>
+      <div class="s-line reveal"></div>
+      <p class="mindset-desc reveal">The world's richest people don't just work hard — they think differently. Our Brain Waves Mindset program rewires your subconscious for success, wealth, and unstoppable growth.</p>
+      <ul class="feat-list reveal">
+        <li>Millionaire Morning Routine System</li>
+        <li>Investment & Passive Income Masterclass</li>
+        <li>Mind Control & Hypnosis Training</li>
+        <li>Subconscious Reprogramming</li>
+        <li>Elite Daily Habits</li>
+        <li>Financial Freedom Roadmap</li>
+        <li>Dopamine Detox & Yoga</li>
+      </ul>
+    </div>
+    <div class="mindset-right reveal"><div class="brain-visual">🧠</div></div>
+  </div>
+</section>
+
+<!-- SUPER SKILLS -->
 <section id="superskills">
   <div class="ss-wrap reveal">
     <div class="ss-badge">⚡ HIGHLIGHT — MUST SEE</div>
-    <h2 class="ss-title">
-      <span class="line1">MONEY MASTERY</span>
-      <span class="line2">SUPER SKILLS</span>
-    </h2>
-    <p class="ss-desc">Everything you need to master money, mind, and life — all in ONE membership. Elon Musk, Bill Gates, Zuckerberg, Steve Jobs all mastered these super skills. Now YOUR time through Transformation Pakistan.</p>
+    <h2 class="ss-title"><span class="line1">MONEY MASTERY</span><span class="line2">SUPER SKILLS</span></h2>
+    <p class="ss-desc">Everything you need to master money, mind, and life — all in ONE membership. Elon Musk, Bill Gates, Zuckerberg, Steve Jobs — they all mastered these super skills. Now YOUR time through Transformation Pakistan.</p>
     <div class="ss-grid">
       <div class="ss-item"><span class="ss-item-icon">💰</span><div class="ss-item-name">Money Mastery</div></div>
       <div class="ss-item"><span class="ss-item-icon">🌐</span><div class="ss-item-name">Digital Marketing</div></div>
@@ -333,21 +424,56 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
     <div class="course-card reveal"><span class="c-icon">🛒</span><div class="c-name">Ecommerce Mastery</div><p class="c-desc">Build and scale your ecommerce store from zero to profit with proven Pakistani market strategies.</p></div>
     <div class="course-card reveal"><span class="c-icon">📦</span><div class="c-name">Amazon FBA</div><p class="c-desc">Launch and grow your Amazon FBA business. Product research, sourcing, listing and scaling.</p></div>
     <div class="course-card reveal"><span class="c-icon">🇬🇧</span><div class="c-name">Ebay Training</div><p class="c-desc">Complete Ebay training from UK and Pakistan perspective. Sell globally from your home.</p></div>
-    <div class="course-card reveal"><span class="c-icon">🗣️</span><div class="c-name">English Language — 15+ Hours</div><p class="c-desc">More than 15 hours of premium English language learning training designed for Pakistani learners.</p></div>
-    <div class="course-card reveal"><span class="c-icon">📚</span><div class="c-name">IELTS 8 Bands Training</div><p class="c-desc">Complete IELTS preparation to achieve 8 bands score. Reading, writing, listening and speaking.</p></div>
-    <div class="course-card reveal"><span class="c-icon">🧠</span><div class="c-name">Mind Control</div><p class="c-desc">Master your mind completely. Control thoughts, emotions and reprogram your subconscious mind.</p></div>
+    <div class="course-card reveal"><span class="c-icon">🗣️</span><div class="c-name">English Language — 15+ Hours</div><p class="c-desc">More than 15 hours of premium English language learning training for Pakistani learners.</p></div>
+    <div class="course-card reveal"><span class="c-icon">📚</span><div class="c-name">IELTS 8 Bands Training</div><p class="c-desc">Complete IELTS preparation to achieve 8 bands. Reading, writing, listening and speaking.</p></div>
+    <div class="course-card reveal"><span class="c-icon">🧠</span><div class="c-name">Mind Control</div><p class="c-desc">Master your mind completely. Control thoughts, emotions and reprogram your subconscious.</p></div>
     <div class="course-card reveal"><span class="c-icon">🔮</span><div class="c-name">Hypnosis & Telepathy</div><p class="c-desc">Learn the ancient arts of hypnosis and telepathy. Unlock hidden powers of the human mind.</p></div>
     <div class="course-card reveal"><span class="c-icon">🧘</span><div class="c-name">Yoga & Dopamine Detox</div><p class="c-desc">Complete yoga training plus dopamine detox system to reset your brain and maximize performance.</p></div>
+  </div>
+</section>
+
+<!-- FREE RESOURCES -->
+<section id="free-resources">
+  <div class="s-tag reveal" style="justify-content:center">Bonus — Included Free</div>
+  <h2 class="s-title reveal" style="text-align:center">Massive <span class="c">FREE</span> <span class="y">Resources</span> Bundle</h2>
+  <div class="s-line reveal" style="margin:0 auto 1rem"></div>
+  <p class="reveal" style="text-align:center;color:rgba(255,255,255,.6);font-size:1rem;max-width:650px;margin:0 auto;line-height:1.8">Thousands of free learning resources — courses, design books, and productivity templates — all curated for you.</p>
+  <div class="res-grid">
+    <div class="res-card reveal"><span class="res-icon">🎓</span><span class="res-count">1,700</span><div class="res-name">Free Online Courses</div><p class="res-desc">Free courses from Harvard, MIT, Stanford and top universities around the world — curated for members.</p><span class="res-tag">Top Universities</span></div>
+    <div class="res-card reveal"><span class="res-icon">🎨</span><span class="res-count">13</span><div class="res-name">Free Graphic Design Books</div><p class="res-desc">13 premium graphic design books as free PDF downloads — branding, typography, UI/UX design and more.</p><span class="res-tag">PDF Downloads</span></div>
+    <div class="res-card reveal"><span class="res-icon">📝</span><span class="res-count">70+</span><div class="res-name">Best Free Notion Templates</div><p class="res-desc">The 70 best and free Notion templates for 2026 — task management, goal tracking, business planning.</p><span class="res-tag">2026 Edition</span></div>
+  </div>
+</section>
+
+<!-- BEST SELLERS -->
+<section id="bestsellers">
+  <div class="s-tag reveal">Pakistan's Most Wanted</div>
+  <h2 class="s-title reveal">⭐ <span class="y">BEST</span> <span class="p">SELLERS</span></h2>
+  <div class="s-line reveal"></div>
+  <div class="bs-grid">
+    <div class="bs-card card1 reveal"><div class="bs-top"><span class="bs-badge badge-y">Best Seller</span><span class="bs-icon">👑</span><div class="bs-name y">Billionaire Brand Wave</div></div><ul class="bs-feat"><li>Brand Blueprint</li><li>Authority Positioning</li><li>Social Media Empire</li><li>Elite Network Access</li><li>Brand Monetization</li></ul><div style="padding:0 2rem 2rem"><button class="bs-btn btn-ey">Enroll Now →</button></div></div>
+    <div class="bs-card card2 reveal"><div class="bs-top"><span class="bs-badge badge-p">🔥 Hot</span><span class="bs-icon">🧠</span><div class="bs-name p">Brain Waves Mindset</div></div><ul class="bs-feat"><li>Millionaire Morning System</li><li>Investment Masterclass</li><li>Freedom Roadmap</li><li>Passive Income System</li><li>Mindset Reprogramming</li></ul><div style="padding:0 2rem 2rem"><button class="bs-btn btn-ep">Enroll Now →</button></div></div>
+    <div class="bs-card card3 reveal"><div class="bs-top"><span class="bs-badge badge-c">Complete Bundle</span><span class="bs-icon">📈</span><div class="bs-name c">Money Mastery & Life Skills</div></div><ul class="bs-feat"><li>Complete Money Mastery</li><li>Business Launch Blueprint</li><li>120+ Video Lessons</li><li>1-on-1 Mentorship</li><li>Lifetime Community Access</li></ul><div style="padding:0 2rem 2rem"><button class="bs-btn btn-ec">Enroll Now →</button></div></div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos">
+  <div class="s-tag reveal" style="justify-content:center">Learn At Your Own Pace</div>
+  <div class="big-num reveal">120+</div>
+  <h2 class="s-title reveal">Premium <span class="y">Video</span> Lessons</h2>
+  <p class="reveal" style="color:rgba(255,255,255,.6);font-size:1rem;letter-spacing:2px">Learn anytime · anywhere · any device</p>
+  <div class="vid-grid">
+    <div class="vid-card reveal"><span class="vid-icon">📱</span><div class="vid-title">Any Device</div><p class="vid-desc">Watch on mobile, tablet or desktop anytime you want</p></div>
+    <div class="vid-card reveal"><span class="vid-icon">♾️</span><div class="vid-title">Lifetime Access</div><p class="vid-desc">Buy once and access forever — no expiry ever</p></div>
+    <div class="vid-card reveal"><span class="vid-icon">🔄</span><div class="vid-title">New Content</div><p class="vid-desc">Fresh videos added regularly to keep you ahead</p></div>
   </div>
 </section>
 
 <!-- BOOKS -->
 <section id="books">
   <div class="books-wrap">
-    <div class="books-visual reveal">
-      <div class="books-big">1 LAC+</div>
-      <div class="books-sub">Worth of Books — FREE in Membership</div>
-    </div>
+    <div class="books-visual reveal"><div class="books-big">1 LAC+</div><div class="books-sub">Worth of Books — FREE in Membership</div></div>
     <div class="books-content">
       <div class="s-tag reveal">Included Free</div>
       <h2 class="s-title reveal">Books Worth <span class="y">1 Lac+</span><br>Rupees <span class="p">FREE</span></h2>
@@ -369,56 +495,25 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
 <section id="membership">
   <div class="s-tag reveal" style="justify-content:center">First Time in Pakistan</div>
   <h2 class="s-title reveal" style="text-align:center">JOIN <span class="p">ELITE</span> <span class="y">MEMBERSHIP</span></h2>
-  <p class="reveal" style="text-align:center;color:rgba(255,255,255,.6);margin-bottom:2rem;letter-spacing:1px;font-size:.9rem">Starting in Pakistan — Limited Time Only</p>
-
-  <div class="mem-urgent reveal">
-    <div class="mem-urgent-dot"></div>
-    <div class="mem-urgent-text">🚨 <strong>ONE WEEK ONLY</strong> — Join Now Before Price Goes Up to PKR 5,000</div>
-  </div>
-
+  <p class="reveal" style="text-align:center;color:rgba(255,255,255,.6);margin-bottom:2rem;font-size:.9rem">Starting in Pakistan — Limited Time Only</p>
+  <div class="mem-urgent reveal"><div class="mem-urgent-dot"></div><div class="mem-urgent-text">🚨 <strong>ONE WEEK ONLY</strong> — Join Now Before Price Goes Up to PKR 5,000</div></div>
   <div class="mem-grid">
-    <!-- STARTER -->
     <div class="mem-card silver reveal">
       <span class="mem-icon">⚡</span>
       <div class="mem-name">Starter Membership</div>
-      <div class="mem-price-wrap">
-        <div class="mem-price">PKR 1,500</div>
-        <span class="mem-price-note">One Week Launch Price Only</span>
-        <span class="mem-after">After 1 week → PKR 5,000</span>
-      </div>
+      <div class="mem-price-wrap"><div class="mem-price">PKR 1,500</div><span class="mem-price-note">One Week Launch Price Only</span><span class="mem-after">After 1 week → PKR 5,000</span></div>
       <ul class="mem-feats">
-        <li>Access to all courses</li>
-        <li>Digital Marketing + Ecommerce</li>
-        <li>Amazon FBA + Ebay Training</li>
-        <li>English 15+ Hours Training</li>
-        <li>IELTS 8 Bands Preparation</li>
-        <li>Mind Control + Hypnosis</li>
-        <li>Yoga + Dopamine Detox</li>
+        <li>Access to all courses</li><li>Digital Marketing + Ecommerce</li><li>Amazon FBA + Ebay Training</li><li>English 15+ Hours Training</li><li>IELTS 8 Bands Preparation</li><li>Mind Control + Hypnosis</li><li>Yoga + Dopamine Detox</li><li>1,700 Free University Courses</li><li>13 Free Design Books + 70 Notion Templates</li>
       </ul>
       <button class="mem-btn">Join Now — PKR 1,500 →</button>
     </div>
-
-    <!-- ELITE LIFETIME -->
     <div class="mem-card gold reveal">
       <div class="popular-badge">👑 MOST POPULAR — BEST VALUE</div>
       <span class="mem-icon">👑</span>
       <div class="mem-name">Elite Lifetime Membership</div>
-      <div class="mem-price-wrap">
-        <div class="mem-price">LIFETIME</div>
-        <span class="mem-price-note">One Week Launch — PKR 1,500</span>
-        <span class="mem-after">After 1 week → PKR 5,000 forever</span>
-      </div>
+      <div class="mem-price-wrap"><div class="mem-price">LIFETIME</div><span class="mem-price-note">One Week Launch — PKR 1,500</span><span class="mem-after">After 1 week → PKR 5,000 forever</span></div>
       <ul class="mem-feats">
-        <li>ALL 120+ Video Lessons</li>
-        <li>Books worth 1 Lac+ Rupees FREE</li>
-        <li>Complete Money Mastery Super Skills</li>
-        <li>Digital Marketing + Ecommerce + Amazon FBA</li>
-        <li>Ebay Training UK & Pakistan</li>
-        <li>15+ Hours English + IELTS 8 Bands</li>
-        <li>Mind Control + Hypnosis + Telepathy</li>
-        <li>Yoga + Dopamine Detox</li>
-        <li>Lifetime Access — Never Expires</li>
-        <li>1-on-1 Mentorship Sessions</li>
+        <li>ALL 120+ Video Lessons</li><li>Books worth 1 Lac+ Rupees FREE</li><li>Complete Money Mastery Super Skills</li><li>Digital Marketing + Ecommerce + Amazon FBA</li><li>Ebay Training UK & Pakistan</li><li>15+ Hours English + IELTS 8 Bands</li><li>Mind Control + Hypnosis + Telepathy</li><li>Yoga + Dopamine Detox</li><li>1,700 Free Online Courses (Top Universities)</li><li>13 Free Graphic Design Books PDF</li><li>70 Best Free Notion Templates 2026</li><li>Lifetime Access — Never Expires</li><li>1-on-1 Mentorship Sessions</li>
       </ul>
       <button class="mem-btn">Get Lifetime — PKR 1,500 →</button>
     </div>
@@ -430,7 +525,7 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
   <div style="position:relative;z-index:1">
     <div class="s-tag reveal" style="justify-content:center">Offer Ends In</div>
     <span class="cta-t1 reveal">JOIN ELITE MEMBERSHIP</span>
-    <span class="cta-t2 reveal">STARTING IN PAKISTAN</span>
+    <span class="cta-t2 reveal">TRANSFORMATION PAKISTAN</span>
     <span class="cta-t3 reveal">ONLY FOR ONE WEEK — PKR 1,500</span>
     <p class="cta-sub reveal">After one week membership extends to PKR 5,000. Lock in PKR 1,500 now — forever.</p>
     <div class="countdown reveal">
@@ -440,43 +535,21 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
       <div class="cbox"><span class="cnum" id="s">00</span><span class="clbl">Seconds</span></div>
     </div>
     <button class="btn-y reveal" style="font-size:.85rem;padding:1.2rem 4rem">JOIN NOW — PKR 1,500 ONLY →</button>
-    <p class="guarantee reveal">✓ Lifetime Access &nbsp;·&nbsp; ✓ 120+ Videos &nbsp;·&nbsp; ✓ Books Worth 1 Lac+ Free &nbsp;·&nbsp; ✓ 🇵🇰 Transformation Pakistan</p>
+    <p class="guarantee reveal">✓ Lifetime Access &nbsp;·&nbsp; ✓ 120+ Videos &nbsp;·&nbsp; ✓ Books Worth 1 Lac+ Free &nbsp;·&nbsp; ✓ 1,700 Free Courses &nbsp;·&nbsp; ✓ 🇵🇰 Transformation Pakistan</p>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="foot-top">
     <div>
-      <span class="foot-logo">Transformation Pakistan
-        <span>Money Mastery Elite Academy</span>
-      </span>
+      <span class="foot-logo">Transformation Pakistan<span>Money Mastery Elite Academy</span></span>
       <p class="foot-desc">Pakistan's #1 Elite Money Mastery & Life Skills Academy. Join the 1% today.</p>
     </div>
     <div class="foot-cols">
-      <div class="foot-col">
-        <h4>Courses</h4>
-        <a href="#">Digital Marketing</a>
-        <a href="#">Amazon FBA</a>
-        <a href="#">Ecommerce</a>
-        <a href="#">Ebay UK & Pakistan</a>
-        <a href="#">IELTS 8 Bands</a>
-      </div>
-      <div class="foot-col">
-        <h4>Skills</h4>
-        <a href="#">English Training</a>
-        <a href="#">Mind Control</a>
-        <a href="#">Hypnosis</a>
-        <a href="#">Yoga & Detox</a>
-        <a href="#">Money Mastery</a>
-      </div>
-      <div class="foot-col">
-        <h4>Connect</h4>
-        <a href="#">WhatsApp</a>
-        <a href="#">Instagram</a>
-        <a href="#">YouTube</a>
-        <a href="#">Facebook</a>
-      </div>
+      <div class="foot-col"><h4>Courses</h4><a href="#">Digital Marketing</a><a href="#">Amazon FBA</a><a href="#">Ecommerce</a><a href="#">Ebay UK & Pakistan</a><a href="#">IELTS 8 Bands</a></div>
+      <div class="foot-col"><h4>Skills</h4><a href="#">English Training</a><a href="#">Mind Control</a><a href="#">Hypnosis</a><a href="#">Yoga & Detox</a><a href="#">Money Mastery</a></div>
+      <div class="foot-col"><h4>Free Resources</h4><a href="#">1,700 Free Online Courses</a><a href="#">13 Free Design Books</a><a href="#">70 Notion Templates</a><a href="#">Books Library 1 Lac+</a></div>
+      <div class="foot-col"><h4>Connect</h4><a href="#">WhatsApp</a><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">Facebook</a></div>
     </div>
   </div>
   <div class="foot-bottom">
@@ -491,35 +564,155 @@ const c1=document.getElementById('cur'),c2=document.getElementById('cur2');
 let mx=0,my=0,rx=0,ry=0;
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;c1.style.left=mx+'px';c1.style.top=my+'px'});
 setInterval(()=>{rx+=(mx-rx)*.1;ry+=(my-ry)*.1;c2.style.left=rx+'px';c2.style.top=ry+'px'},16);
+document.querySelectorAll('button,a').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{c1.style.width='16px';c1.style.height='16px'});
+  el.addEventListener('mouseleave',()=>{c1.style.width='10px';c1.style.height='10px'});
+});
 
 // Particles
 const cv=document.getElementById('bg'),cx=cv.getContext('2d');
 cv.width=window.innerWidth;cv.height=window.innerHeight;
 window.addEventListener('resize',()=>{cv.width=window.innerWidth;cv.height=window.innerHeight});
 const cols=['rgba(255,215,0,','rgba(255,0,110,','rgba(0,255,255,'];
-const pts=Array.from({length:80},()=>({
-  x:Math.random()*cv.width,y:Math.random()*cv.height,
-  vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,
-  r:Math.random()*1.5+.4,
-  col:cols[Math.floor(Math.random()*3)],
-  a:Math.random()*.25+.08
-}));
+const pts=Array.from({length:80},()=>({x:Math.random()*cv.width,y:Math.random()*cv.height,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,r:Math.random()*1.5+.4,col:cols[Math.floor(Math.random()*3)],a:Math.random()*.25+.08}));
 (function draw(){
   cx.clearRect(0,0,cv.width,cv.height);
-  pts.forEach(p=>{
-    p.x+=p.vx;p.y+=p.vy;
-    if(p.x<0)p.x=cv.width;if(p.x>cv.width)p.x=0;
-    if(p.y<0)p.y=cv.height;if(p.y>cv.height)p.y=0;
-    cx.beginPath();cx.arc(p.x,p.y,p.r,0,Math.PI*2);
-    cx.fillStyle=p.col+p.a+')';cx.fill();
-  });
-  for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){
-    const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);
-    if(d<110){cx.beginPath();cx.moveTo(pts[i].x,pts[i].y);cx.lineTo(pts[j].x,pts[j].y);
-    cx.strokeStyle=`rgba(255,215,0,${.04*(1-d/110)})`;cx.lineWidth=.5;cx.stroke()}
-  }
+  pts.forEach(p=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0)p.x=cv.width;if(p.x>cv.width)p.x=0;if(p.y<0)p.y=cv.height;if(p.y>cv.height)p.y=0;cx.beginPath();cx.arc(p.x,p.y,p.r,0,Math.PI*2);cx.fillStyle=p.col+p.a+')';cx.fill();});
+  for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<110){cx.beginPath();cx.moveTo(pts[i].x,pts[i].y);cx.lineTo(pts[j].x,pts[j].y);cx.strokeStyle=`rgba(255,215,0,${.04*(1-d/110)})`;cx.lineWidth=.5;cx.stroke()}}
   requestAnimationFrame(draw);
 })();
+
+// Portrait drawings using Canvas
+function drawPortrait(id, config) {
+  const canvas = document.getElementById(id);
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const W = 90, H = 90, CX = 45, CY = 45;
+  
+  // Background circle
+  ctx.beginPath(); ctx.arc(CX, CY, 44, 0, Math.PI*2);
+  const bg = ctx.createRadialGradient(CX, CY-10, 5, CX, CY, 44);
+  bg.addColorStop(0, config.bgLight); bg.addColorStop(1, config.bgDark);
+  ctx.fillStyle = bg; ctx.fill();
+  
+  // Neck
+  ctx.fillStyle = config.skin;
+  ctx.beginPath(); ctx.ellipse(CX, 72, 10, 14, 0, 0, Math.PI*2); ctx.fill();
+  
+  // Shirt/collar
+  ctx.fillStyle = config.shirt;
+  ctx.beginPath(); ctx.ellipse(CX, 86, 22, 14, 0, 0, Math.PI*2); ctx.fill();
+  
+  // Face
+  const faceGrad = ctx.createRadialGradient(CX-3, CY-3, 2, CX, CY, 20);
+  faceGrad.addColorStop(0, config.skinLight); faceGrad.addColorStop(1, config.skin);
+  ctx.fillStyle = faceGrad;
+  ctx.beginPath(); ctx.ellipse(CX, CY-2, 19, 22, 0, 0, Math.PI*2); ctx.fill();
+  
+  // Hair
+  ctx.fillStyle = config.hair;
+  ctx.beginPath();
+  ctx.arc(CX, CY-16, 20, Math.PI, 0); ctx.fill();
+  if (config.hairStyle === 'receding') {
+    ctx.fillStyle = config.bgDark;
+    ctx.beginPath(); ctx.ellipse(CX, CY-16, 10, 8, 0, 0, Math.PI*2); ctx.fill();
+  }
+  if (config.hairStyle === 'bald') {
+    ctx.fillStyle = config.skin;
+    ctx.beginPath(); ctx.arc(CX, CY-10, 18, Math.PI, 0); ctx.fill();
+    ctx.fillStyle = config.hair;
+    ctx.beginPath(); ctx.arc(CX-16, CY-8, 5, Math.PI, Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.arc(CX+16, CY-8, 5, Math.PI, Math.PI*2); ctx.fill();
+  }
+  
+  // Ears
+  ctx.fillStyle = config.skin;
+  ctx.beginPath(); ctx.ellipse(CX-19, CY-2, 4, 6, 0, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.ellipse(CX+19, CY-2, 4, 6, 0, 0, Math.PI*2); ctx.fill();
+  
+  // Eyes
+  ctx.fillStyle = '#fff';
+  ctx.beginPath(); ctx.ellipse(CX-7, CY-4, 5, 3.5, 0, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.ellipse(CX+7, CY-4, 5, 3.5, 0, 0, Math.PI*2); ctx.fill();
+  ctx.fillStyle = config.eyeColor;
+  ctx.beginPath(); ctx.arc(CX-7, CY-4, 2.5, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(CX+7, CY-4, 2.5, 0, Math.PI*2); ctx.fill();
+  ctx.fillStyle = '#000';
+  ctx.beginPath(); ctx.arc(CX-7, CY-4, 1.3, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(CX+7, CY-4, 1.3, 0, Math.PI*2); ctx.fill();
+  
+  // Eyebrows
+  ctx.strokeStyle = config.hair; ctx.lineWidth = 1.8; ctx.lineCap = 'round';
+  ctx.beginPath(); ctx.moveTo(CX-11, CY-9); ctx.lineTo(CX-3, CY-8); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(CX+3, CY-8); ctx.lineTo(CX+11, CY-9); ctx.stroke();
+  
+  // Nose
+  ctx.strokeStyle = config.skinDark; ctx.lineWidth = 1.2;
+  ctx.beginPath(); ctx.moveTo(CX, CY-2); ctx.lineTo(CX-3, CY+5); ctx.lineTo(CX+3, CY+5); ctx.stroke();
+  
+  // Mouth
+  ctx.strokeStyle = config.skinDark; ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.arc(CX, CY+9, 5, 0.1*Math.PI, 0.9*Math.PI); ctx.stroke();
+  
+  // Glasses if needed
+  if (config.glasses) {
+    ctx.strokeStyle = '#888'; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.arc(CX-7, CY-4, 6, 0, Math.PI*2); ctx.stroke();
+    ctx.beginPath(); ctx.arc(CX+7, CY-4, 6, 0, Math.PI*2); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(CX-1, CY-4); ctx.lineTo(CX+1, CY-4); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(CX-21, CY-5); ctx.lineTo(CX-13, CY-5); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(CX+13, CY-5); ctx.lineTo(CX+21, CY-5); ctx.stroke();
+  }
+  
+  // Rim glow
+  ctx.beginPath(); ctx.arc(CX, CY, 43, 0, Math.PI*2);
+  ctx.strokeStyle = config.rimColor; ctx.lineWidth = 2; ctx.stroke();
+}
+
+// Elon Musk - short light hair, strong jaw
+drawPortrait('p1', {
+  bgLight:'#1a2a3a', bgDark:'#0a1520',
+  skin:'#d4956a', skinLight:'#e8b08a', skinDark:'#b07050',
+  hair:'#8B7355', eyeColor:'#5C8A9B',
+  shirt:'#1a3a5c', hairStyle:'normal',
+  glasses:false, rimColor:'rgba(255,215,0,0.6)'
+});
+
+// Bill Gates - glasses, dark hair
+drawPortrait('p2', {
+  bgLight:'#1a2a1a', bgDark:'#0a150a',
+  skin:'#d4a070', skinLight:'#e8b88a', skinDark:'#b07840',
+  hair:'#2a2a2a', eyeColor:'#4a7a4a',
+  shirt:'#2a4a2a', hairStyle:'normal',
+  glasses:true, rimColor:'rgba(0,255,0,0.4)'
+});
+
+// Mark Zuckerberg - curly dark hair, casual
+drawPortrait('p3', {
+  bgLight:'#1a1a3a', bgDark:'#0a0a20',
+  skin:'#dba878', skinLight:'#ecca90', skinDark:'#b88858',
+  hair:'#3a2a1a', eyeColor:'#3a5a8a',
+  shirt:'#888888', hairStyle:'normal',
+  glasses:false, rimColor:'rgba(100,100,255,0.5)'
+});
+
+// Steve Jobs - black turtleneck, salt & pepper
+drawPortrait('p4', {
+  bgLight:'#2a1a0a', bgDark:'#150800',
+  skin:'#c8906a', skinLight:'#dca880', skinDark:'#a87050',
+  hair:'#2a2a2a', eyeColor:'#5a4a3a',
+  shirt:'#111111', hairStyle:'receding',
+  glasses:false, rimColor:'rgba(255,120,0,0.5)'
+});
+
+// Jeff Bezos - bald, dark shirt
+drawPortrait('p5', {
+  bgLight:'#2a2a1a', bgDark:'#15150a',
+  skin:'#d09060', skinLight:'#e4a878', skinDark:'#a87040',
+  hair:'#1a1a1a', eyeColor:'#4a4a6a',
+  shirt:'#111122', hairStyle:'bald',
+  glasses:false, rimColor:'rgba(255,165,0,0.5)'
+});
 
 // Reveal
 const obs=new IntersectionObserver(en=>en.forEach(e=>{
@@ -528,21 +721,17 @@ const obs=new IntersectionObserver(en=>en.forEach(e=>{
 }),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
-// Stats counter
 let done=false;
 function animStats(){
   if(done)return;done=true;
   document.querySelectorAll('[data-t]').forEach(el=>{
     const t=+el.dataset.t;let c=0;const step=t/60;
-    const tm=setInterval(()=>{c+=step;
-      if(c>=t){c=t;clearInterval(tm)}
-      el.textContent=Math.floor(c).toLocaleString()+(t>=1000?'+':'+');
-    },25);
+    const tm=setInterval(()=>{c+=step;if(c>=t){c=t;clearInterval(tm)}el.textContent=Math.floor(c).toLocaleString()+'+';},25);
   });
 }
 
 // 3D Tilt
-document.querySelectorAll('.course-card,.ss-item,.mem-card').forEach(card=>{
+document.querySelectorAll('.course-card,.ss-item,.mem-card,.bs-card,.vid-card,.res-card,.legend-card').forEach(card=>{
   card.addEventListener('mousemove',e=>{
     const r=card.getBoundingClientRect();
     const x=(e.clientX-r.left-r.width/2)/(r.width/2);
@@ -563,15 +752,8 @@ const end=new Date(Date.now()+7*864e5);
   setTimeout(tick,1000);
 })();
 
-// Nav scroll
-window.addEventListener('scroll',()=>{
-  document.querySelector('nav').style.padding=scrollY>60?'.6rem 4rem':'1rem 4rem';
-});
-
-// Stagger
-document.querySelectorAll('.courses-grid .reveal,.ss-grid .reveal').forEach((el,i)=>{
-  el.style.transitionDelay=`${(i%3)*.12}s`;
-});
+window.addEventListener('scroll',()=>{document.querySelector('nav').style.padding=scrollY>60?'.6rem 4rem':'1rem 4rem';});
+document.querySelectorAll('.courses-grid .reveal,.ss-grid .reveal,.bs-grid .reveal,.res-grid .reveal').forEach((el,i)=>{el.style.transitionDelay=`${(i%3)*.12}s`;});
 </script>
 </body>
 </html>
