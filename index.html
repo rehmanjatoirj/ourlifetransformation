@@ -73,6 +73,57 @@ section{position:relative;z-index:1;padding:6rem 4rem}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
+/* ===== GRABBING TITLES BANNER ===== */
+#grabbing-titles{position:relative;z-index:1;background:linear-gradient(135deg,#0a0a0f 0%,#0f0a18 40%,#0a0f0a 100%);padding:5rem 4rem 4rem;text-align:center;overflow:hidden}
+#grabbing-titles::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(255,0,110,.06),transparent 50%),radial-gradient(ellipse at 80% 50%,rgba(255,215,0,.04),transparent 50%)}
+.gt-eyebrow{font-family:'Orbitron',monospace;font-size:.6rem;letter-spacing:5px;color:var(--cyan);text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:.8rem;margin-bottom:1rem;opacity:0;animation:fu .7s .1s forwards}
+.gt-eyebrow::before,.gt-eyebrow::after{content:'';width:40px;height:1px;background:linear-gradient(90deg,transparent,var(--cyan))}
+.gt-eyebrow::after{background:linear-gradient(90deg,var(--cyan),transparent)}
+.gt-heading{font-family:'Orbitron',monospace;font-size:clamp(1.2rem,3vw,2.2rem);font-weight:900;color:#fff;margin-bottom:.4rem;opacity:0;animation:fu .7s .2s forwards}
+.gt-heading span{color:var(--yellow)}
+.gt-subhead{font-size:.85rem;color:rgba(255,255,255,.45);letter-spacing:2px;margin-bottom:2.5rem;opacity:0;animation:fu .7s .3s forwards}
+
+/* Cards grid */
+.gt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2.5rem}
+.gt-card{position:relative;background:var(--card);border:1px solid rgba(255,255,255,.07);padding:1.4rem 1.2rem 1.2rem;text-align:left;overflow:hidden;transition:all .35s;cursor:default}
+.gt-card::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity .35s}
+.gt-card:hover{transform:translateY(-6px)}
+.gt-card:hover::before{opacity:1}
+/* Color variants */
+.gt-card.v-y{border-top:2px solid var(--yellow)}
+.gt-card.v-y::before{background:linear-gradient(135deg,rgba(255,215,0,.06),transparent)}
+.gt-card.v-y:hover{box-shadow:0 20px 50px rgba(255,215,0,.12)}
+.gt-card.v-p{border-top:2px solid var(--pink)}
+.gt-card.v-p::before{background:linear-gradient(135deg,rgba(255,0,110,.06),transparent)}
+.gt-card.v-p:hover{box-shadow:0 20px 50px rgba(255,0,110,.12)}
+.gt-card.v-c{border-top:2px solid var(--cyan)}
+.gt-card.v-c::before{background:linear-gradient(135deg,rgba(0,255,255,.06),transparent)}
+.gt-card.v-c:hover{box-shadow:0 20px 50px rgba(0,255,255,.12)}
+/* Keyword highlight tag */
+.gt-kw{display:inline-block;font-family:'Orbitron',monospace;font-size:.5rem;letter-spacing:3px;text-transform:uppercase;padding:.2rem .6rem;margin-bottom:.6rem;font-weight:700}
+.v-y .gt-kw{background:rgba(255,215,0,.12);color:var(--yellow);border:1px solid rgba(255,215,0,.3)}
+.v-p .gt-kw{background:rgba(255,0,110,.12);color:var(--pink);border:1px solid rgba(255,0,110,.3)}
+.v-c .gt-kw{background:rgba(0,255,255,.1);color:var(--cyan);border:1px solid rgba(0,255,255,.25)}
+/* Title text */
+.gt-text{font-family:'Rajdhani',sans-serif;font-size:clamp(.85rem,1.4vw,1rem);font-weight:600;color:#fff;line-height:1.55;letter-spacing:.3px}
+.gt-text em{font-style:normal;font-weight:700}
+.v-y .gt-text em{color:var(--yellow)}
+.v-p .gt-text em{color:var(--pink)}
+.v-c .gt-text em{color:var(--cyan)}
+/* Fire badge */
+.gt-fire{position:absolute;top:.8rem;right:.8rem;font-size:1rem;opacity:.6}
+
+/* "Join Now" button block */
+.gt-cta-block{display:flex;flex-direction:column;align-items:center;gap:1rem}
+.gt-cta-label{font-family:'Orbitron',monospace;font-size:.6rem;letter-spacing:4px;color:rgba(255,255,255,.4);text-transform:uppercase}
+.gt-join-btn{background:linear-gradient(135deg,var(--pink),#aa0047);color:#fff;padding:1.1rem 4rem;border:none;font-family:'Orbitron',monospace;font-weight:700;font-size:.9rem;letter-spacing:3px;text-transform:uppercase;cursor:pointer;clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%);transition:all .3s;position:relative;overflow:hidden}
+.gt-join-btn::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.1),transparent);transform:translateX(-100%);transition:transform .5s}
+.gt-join-btn:hover::after{transform:translateX(100%)}
+.gt-join-btn:hover{box-shadow:0 0 40px rgba(255,0,110,.5);transform:translateY(-3px) scale(1.02)}
+.gt-price-note{font-size:.8rem;color:rgba(255,255,255,.35);letter-spacing:1px}
+.gt-price-note strong{color:var(--yellow)}
+/* ===== END GRABBING TITLES ===== */
+
 /* TRANSFORMATION MOMENT SECTION */
 #tp-moment{background:linear-gradient(135deg,#0a0a0a 0%,#0f0f1a 50%,#0a0a0a 100%);padding:7rem 4rem;text-align:center;position:relative;overflow:hidden;z-index:1}
 #tp-moment::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(255,215,0,.05),transparent 55%),radial-gradient(ellipse at 70% 50%,rgba(255,0,110,.04),transparent 55%)}
@@ -291,6 +342,8 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
   .tpm-card{border-right:none;border-bottom:1px solid rgba(255,215,0,.08)}
   #tp-moment{padding:4rem 1.5rem}
   .tpm-quote{padding:1.5rem}
+  #grabbing-titles{padding:4rem 1.5rem}
+  .gt-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -362,6 +415,97 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
   <div class="stat"><span class="sn" data-t="1700">0</span><span class="sl">Free Online Courses</span></div>
 </div>
 
+<!-- ===== GRABBING TITLES SECTION ===== -->
+<section id="grabbing-titles">
+  <div class="gt-eyebrow reveal">What You Will Learn Inside</div>
+  <h2 class="s-title reveal" style="text-align:center;margin-bottom:.4rem">Trending <span class="y">Topics</span> — <span class="p">Inside Your Membership</span></h2>
+  <p class="gt-subhead reveal">Yahi woh topics hain jo log YouTube per search karte hain — sab kuch ek jagah milega</p>
+
+  <div class="gt-grid reveal">
+
+    <div class="gt-card v-y">
+      <span class="gt-fire">🔥</span>
+      <div class="gt-kw">AI &amp; ChatGPT</div>
+      <div class="gt-text">Forget ChatGPT! <em>Claude AI Will Blow Your Mind</em> — aur yeh bilkul <em>FREE</em> hai</div>
+    </div>
+
+    <div class="gt-card v-p">
+      <span class="gt-fire">💸</span>
+      <div class="gt-kw">Online Earning</div>
+      <div class="gt-text"><em>$1000 Monthly Earn Karo</em> With AI Strategies — real proven methods</div>
+    </div>
+
+    <div class="gt-card v-c">
+      <span class="gt-fire">🤖</span>
+      <div class="gt-kw">Prompt Engineering</div>
+      <div class="gt-text">ChatGPT 5 Ab <em>Prompt Engineering Ki Zarurat Nahi!</em> — naya tareeqa seekho</div>
+    </div>
+
+    <div class="gt-card v-y">
+      <span class="gt-fire">🏦</span>
+      <div class="gt-kw">Wealth Mindset</div>
+      <div class="gt-text">I Met <em>100+ Millionaires</em> — Here Are <em>4 Ways To Get Rich Fast</em></div>
+    </div>
+
+    <div class="gt-card v-p">
+      <span class="gt-fire">🤑</span>
+      <div class="gt-kw">AI Money</div>
+      <div class="gt-text"><em>AI Money Machines</em> — <em>101 Ways To Profit</em> with Artificial Intelligence</div>
+    </div>
+
+    <div class="gt-card v-c">
+      <span class="gt-fire">📚</span>
+      <div class="gt-kw">IELTS Strategy</div>
+      <div class="gt-text"><em>The Band 6 Trap</em> — Most IELTS Students Fall Into This. Hum batayenge kaise bachna hai</div>
+    </div>
+
+    <div class="gt-card v-y">
+      <span class="gt-fire">🇨🇳</span>
+      <div class="gt-kw">Language Learning</div>
+      <div class="gt-text">Listen To This For <em>5 Days</em> And Your <em>Chinese Will Change</em> — brain hack method</div>
+    </div>
+
+    <div class="gt-card v-p">
+      <span class="gt-fire">🗣️</span>
+      <div class="gt-kw">English Fluency</div>
+      <div class="gt-text">How To Speak English With Just <em>521 Words</em> — <em>No Grammar, No Dictionary</em></div>
+    </div>
+
+    <div class="gt-card v-c">
+      <span class="gt-fire">🇦🇪</span>
+      <div class="gt-kw">Freelancing</div>
+      <div class="gt-text">How to Get <em>Dubai Freelancing Clients</em> Using AI — Pakistan se global income</div>
+    </div>
+
+    <div class="gt-card v-y">
+      <span class="gt-fire">💡</span>
+      <div class="gt-kw">SaaS Ideas 2026</div>
+      <div class="gt-text"><em>7 Hidden AI SaaS Ideas</em> To Make Money In 2026 — <em>No Coding Required</em></div>
+    </div>
+
+    <div class="gt-card v-p">
+      <span class="gt-fire">🎯</span>
+      <div class="gt-kw">IELTS First Attempt</div>
+      <div class="gt-text">Crack IELTS In <em>First Attempt!</em> — <em>1 Min Strategy</em> jo koi nahi batata</div>
+    </div>
+
+    <div class="gt-card v-c">
+      <span class="gt-fire">🚀</span>
+      <div class="gt-kw">DeepSeek AI</div>
+      <div class="gt-text"><em>DeepSeek R1</em> Se Paise Kamaye — naye AI tools se kamayi ka naya tareeqa</div>
+    </div>
+
+  </div>
+
+  <!-- JOIN NOW button -->
+  <div class="gt-cta-block reveal">
+    <div class="gt-cta-label">Yeh sab topics — ek membership mein</div>
+    <button class="gt-join-btn" onclick="document.getElementById('membership').scrollIntoView({behavior:'smooth'})">🔥 JOIN NOW — PKR 1,500 ONLY →</button>
+    <div class="gt-price-note">Sirf ek hafte ke liye — baad mein <strong>PKR 5,000</strong> ho jayega</div>
+  </div>
+</section>
+<!-- ===== END GRABBING TITLES ===== -->
+
 <!-- TRANSFORMATION PAKISTAN MOMENT -->
 <section id="tp-moment">
   <div class="s-tag reveal" style="justify-content:center">Our Core Mission</div>
@@ -404,49 +548,43 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
   </div>
 </section>
 
-<!-- LEGENDS SECTION with Canvas Portraits -->
+<!-- LEGENDS -->
 <section id="legends">
   <div class="s-tag reveal" style="justify-content:center">Learn From The Best</div>
   <h2 class="s-title reveal" style="text-align:center">Billionaires Who <span class="y">Mastered</span> These <span class="p">Skills</span></h2>
   <div class="s-line reveal" style="margin:0 auto 2rem"></div>
   <p class="legends-intro reveal"><strong>Elon Musk. Bill Gates. Mark Zuckerberg. Steve Jobs. Jeff Bezos.</strong><br>They all mastered ONE thing the world never taught you — Money Mastery, Digital Business & Mind Control.<br>Now YOUR time through <strong>Transformation Pakistan.</strong></p>
   <div class="legends-grid reveal">
-
     <div class="legend-card">
       <canvas class="legend-portrait" id="p1" width="90" height="90"></canvas>
       <div class="legend-name">Elon Musk</div>
       <div class="legend-title">Tesla · SpaceX · X</div>
       <div class="legend-quote">"If something is important enough, even if the odds are against you, you should still do it."</div>
     </div>
-
     <div class="legend-card">
       <canvas class="legend-portrait" id="p2" width="90" height="90"></canvas>
       <div class="legend-name">Bill Gates</div>
       <div class="legend-title">Microsoft · Philanthropist</div>
       <div class="legend-quote">"It's fine to celebrate success but more important to heed the lessons of failure."</div>
     </div>
-
     <div class="legend-card">
       <canvas class="legend-portrait" id="p3" width="90" height="90"></canvas>
       <div class="legend-name">Mark Zuckerberg</div>
       <div class="legend-title">Meta · Facebook · Instagram</div>
       <div class="legend-quote">"The biggest risk is not taking any risk. Not taking risks is the strategy guaranteed to fail."</div>
     </div>
-
     <div class="legend-card">
       <canvas class="legend-portrait" id="p4" width="90" height="90"></canvas>
       <div class="legend-name">Steve Jobs</div>
       <div class="legend-title">Apple · Pixar · NeXT</div>
       <div class="legend-quote">"Stay hungry, stay foolish. Your work is going to fill a large part of your life."</div>
     </div>
-
     <div class="legend-card">
       <canvas class="legend-portrait" id="p5" width="90" height="90"></canvas>
       <div class="legend-name">Jeff Bezos</div>
       <div class="legend-title">Amazon · Blue Origin</div>
       <div class="legend-quote">"We are stubborn on vision. We are flexible on details. Invent your way out of any box."</div>
     </div>
-
   </div>
 </section>
 
@@ -475,12 +613,7 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
     </div>
     <div class="mindset-right reveal">
       <div class="helen-card">
-        <img
-          src="https://silvamethod.com/stores/wp-content/uploads/2026/01/Helene-Hadsell-Silva-Method-Story-1-1-1024x576.webp"
-          alt="Helen Hadsell — Contest Queen & Silva Method Legend"
-          class="helen-img"
-          onerror="this.style.display='none';document.getElementById('helen-fallback').style.display='flex'"
-        />
+        <img src="https://silvamethod.com/stores/wp-content/uploads/2026/01/Helene-Hadsell-Silva-Method-Story-1-1-1024x576.webp" alt="Helen Hadsell — Contest Queen & Silva Method Legend" class="helen-img" onerror="this.style.display='none';document.getElementById('helen-fallback').style.display='flex'"/>
         <div id="helen-fallback" style="display:none;width:100%;max-width:320px;height:180px;background:linear-gradient(135deg,rgba(255,215,0,.1),rgba(255,0,110,.08));border:2px solid rgba(255,215,0,.3);align-items:center;justify-content:center;margin:0 auto .8rem;font-size:3rem">👑</div>
         <div class="helen-name">Helen Hadsell</div>
         <div class="helen-sub">Contest Queen · Silva Method Legend · USA</div>
@@ -517,7 +650,6 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
 <!-- COURSES -->
 <section id="courses">
   <div class="s-tag reveal">Everything In One Membership</div>
-  <!-- CHANGED: "ALL" removed, replaced with "Some Courses" -->
   <h2 class="s-title reveal"><span class="y">Some Courses</span> <span class="p">INCLUDED</span></h2>
   <div class="s-line reveal"></div>
   <div class="courses-grid">
@@ -530,8 +662,6 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
     <div class="course-card reveal"><span class="c-icon">🧠</span><div class="c-name">Mind Control</div><p class="c-desc">Master your mind completely. Control thoughts, emotions and reprogram your subconscious.</p></div>
     <div class="course-card reveal"><span class="c-icon">🔮</span><div class="c-name">Hypnosis & Telepathy</div><p class="c-desc">Learn the ancient arts of hypnosis and telepathy. Unlock hidden powers of the human mind.</p></div>
     <div class="course-card reveal"><span class="c-icon">🧘</span><div class="c-name">Yoga & Dopamine Detox</div><p class="c-desc">Complete yoga training plus dopamine detox system to reset your brain and maximize performance.</p></div>
-
-    <!-- NEW 5 CARDS ADDED BELOW -->
     <div class="course-card reveal"><span class="c-icon">👁️</span><div class="c-name">Vipassana Meditation</div><p class="c-desc">"To see things as they really are" — the ancient art of insight meditation that trains the mind to observe reality with pure clarity, dissolving illusions and awakening true inner peace.</p></div>
     <div class="course-card reveal"><span class="c-icon">🕉️</span><div class="c-name">Transcendental Meditation</div><p class="c-desc">A specific, effortless form of silent, mantra-based meditation designed to settle the mind into a state of deep relaxation and calm — practiced by millions worldwide for peak performance.</p></div>
     <div class="course-card reveal"><span class="c-icon">☪️</span><div class="c-name">Muraqaba</div><p class="c-desc">The traditional Islamic practice of deep spiritual meditation, mindfulness, and self-supervision — a timeless path to inner stillness, self-awareness, and divine connection.</p></div>
@@ -690,79 +820,41 @@ const pts=Array.from({length:80},()=>({x:Math.random()*cv.width,y:Math.random()*
   requestAnimationFrame(draw);
 })();
 
-// Portrait drawings using Canvas
-function drawPortrait(id, config) {
-  const canvas = document.getElementById(id);
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  const W = 90, H = 90, CX = 45, CY = 45;
-  ctx.beginPath(); ctx.arc(CX, CY, 44, 0, Math.PI*2);
-  const bg = ctx.createRadialGradient(CX, CY-10, 5, CX, CY, 44);
-  bg.addColorStop(0, config.bgLight); bg.addColorStop(1, config.bgDark);
-  ctx.fillStyle = bg; ctx.fill();
-  ctx.fillStyle = config.skin;
-  ctx.beginPath(); ctx.ellipse(CX, 72, 10, 14, 0, 0, Math.PI*2); ctx.fill();
-  ctx.fillStyle = config.shirt;
-  ctx.beginPath(); ctx.ellipse(CX, 86, 22, 14, 0, 0, Math.PI*2); ctx.fill();
-  const faceGrad = ctx.createRadialGradient(CX-3, CY-3, 2, CX, CY, 20);
-  faceGrad.addColorStop(0, config.skinLight); faceGrad.addColorStop(1, config.skin);
-  ctx.fillStyle = faceGrad;
-  ctx.beginPath(); ctx.ellipse(CX, CY-2, 19, 22, 0, 0, Math.PI*2); ctx.fill();
-  ctx.fillStyle = config.hair;
-  ctx.beginPath();
-  ctx.arc(CX, CY-16, 20, Math.PI, 0); ctx.fill();
-  if (config.hairStyle === 'receding') {
-    ctx.fillStyle = config.bgDark;
-    ctx.beginPath(); ctx.ellipse(CX, CY-16, 10, 8, 0, 0, Math.PI*2); ctx.fill();
-  }
-  if (config.hairStyle === 'bald') {
-    ctx.fillStyle = config.skin;
-    ctx.beginPath(); ctx.arc(CX, CY-10, 18, Math.PI, 0); ctx.fill();
-    ctx.fillStyle = config.hair;
-    ctx.beginPath(); ctx.arc(CX-16, CY-8, 5, Math.PI, Math.PI*2); ctx.fill();
-    ctx.beginPath(); ctx.arc(CX+16, CY-8, 5, Math.PI, Math.PI*2); ctx.fill();
-  }
-  ctx.fillStyle = config.skin;
-  ctx.beginPath(); ctx.ellipse(CX-19, CY-2, 4, 6, 0, 0, Math.PI*2); ctx.fill();
-  ctx.beginPath(); ctx.ellipse(CX+19, CY-2, 4, 6, 0, 0, Math.PI*2); ctx.fill();
-  ctx.fillStyle = '#fff';
-  ctx.beginPath(); ctx.ellipse(CX-7, CY-4, 5, 3.5, 0, 0, Math.PI*2); ctx.fill();
-  ctx.beginPath(); ctx.ellipse(CX+7, CY-4, 5, 3.5, 0, 0, Math.PI*2); ctx.fill();
-  ctx.fillStyle = config.eyeColor;
-  ctx.beginPath(); ctx.arc(CX-7, CY-4, 2.5, 0, Math.PI*2); ctx.fill();
-  ctx.beginPath(); ctx.arc(CX+7, CY-4, 2.5, 0, Math.PI*2); ctx.fill();
-  ctx.fillStyle = '#000';
-  ctx.beginPath(); ctx.arc(CX-7, CY-4, 1.3, 0, Math.PI*2); ctx.fill();
-  ctx.beginPath(); ctx.arc(CX+7, CY-4, 1.3, 0, Math.PI*2); ctx.fill();
-  ctx.strokeStyle = config.hair; ctx.lineWidth = 1.8; ctx.lineCap = 'round';
-  ctx.beginPath(); ctx.moveTo(CX-11, CY-9); ctx.lineTo(CX-3, CY-8); ctx.stroke();
-  ctx.beginPath(); ctx.moveTo(CX+3, CY-8); ctx.lineTo(CX+11, CY-9); ctx.stroke();
-  ctx.strokeStyle = config.skinDark; ctx.lineWidth = 1.2;
-  ctx.beginPath(); ctx.moveTo(CX, CY-2); ctx.lineTo(CX-3, CY+5); ctx.lineTo(CX+3, CY+5); ctx.stroke();
-  ctx.strokeStyle = config.skinDark; ctx.lineWidth = 1.5;
-  ctx.beginPath(); ctx.arc(CX, CY+9, 5, 0.1*Math.PI, 0.9*Math.PI); ctx.stroke();
-  if (config.glasses) {
-    ctx.strokeStyle = '#888'; ctx.lineWidth = 1.5;
-    ctx.beginPath(); ctx.arc(CX-7, CY-4, 6, 0, Math.PI*2); ctx.stroke();
-    ctx.beginPath(); ctx.arc(CX+7, CY-4, 6, 0, Math.PI*2); ctx.stroke();
-    ctx.beginPath(); ctx.moveTo(CX-1, CY-4); ctx.lineTo(CX+1, CY-4); ctx.stroke();
-    ctx.beginPath(); ctx.moveTo(CX-21, CY-5); ctx.lineTo(CX-13, CY-5); ctx.stroke();
-    ctx.beginPath(); ctx.moveTo(CX+13, CY-5); ctx.lineTo(CX+21, CY-5); ctx.stroke();
-  }
-  ctx.beginPath(); ctx.arc(CX, CY, 43, 0, Math.PI*2);
-  ctx.strokeStyle = config.rimColor; ctx.lineWidth = 2; ctx.stroke();
+// Portrait drawings
+function drawPortrait(id,config){
+  const canvas=document.getElementById(id);if(!canvas)return;
+  const ctx=canvas.getContext('2d');const W=90,H=90,CX=45,CY=45;
+  ctx.beginPath();ctx.arc(CX,CY,44,0,Math.PI*2);
+  const bg=ctx.createRadialGradient(CX,CY-10,5,CX,CY,44);
+  bg.addColorStop(0,config.bgLight);bg.addColorStop(1,config.bgDark);
+  ctx.fillStyle=bg;ctx.fill();
+  ctx.fillStyle=config.skin;ctx.beginPath();ctx.ellipse(CX,72,10,14,0,0,Math.PI*2);ctx.fill();
+  ctx.fillStyle=config.shirt;ctx.beginPath();ctx.ellipse(CX,86,22,14,0,0,Math.PI*2);ctx.fill();
+  const fg=ctx.createRadialGradient(CX-3,CY-3,2,CX,CY,20);
+  fg.addColorStop(0,config.skinLight);fg.addColorStop(1,config.skin);
+  ctx.fillStyle=fg;ctx.beginPath();ctx.ellipse(CX,CY-2,19,22,0,0,Math.PI*2);ctx.fill();
+  ctx.fillStyle=config.hair;ctx.beginPath();ctx.arc(CX,CY-16,20,Math.PI,0);ctx.fill();
+  if(config.hairStyle==='receding'){ctx.fillStyle=config.bgDark;ctx.beginPath();ctx.ellipse(CX,CY-16,10,8,0,0,Math.PI*2);ctx.fill();}
+  if(config.hairStyle==='bald'){ctx.fillStyle=config.skin;ctx.beginPath();ctx.arc(CX,CY-10,18,Math.PI,0);ctx.fill();ctx.fillStyle=config.hair;ctx.beginPath();ctx.arc(CX-16,CY-8,5,Math.PI,Math.PI*2);ctx.fill();ctx.beginPath();ctx.arc(CX+16,CY-8,5,Math.PI,Math.PI*2);ctx.fill();}
+  ctx.fillStyle=config.skin;ctx.beginPath();ctx.ellipse(CX-19,CY-2,4,6,0,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.ellipse(CX+19,CY-2,4,6,0,0,Math.PI*2);ctx.fill();
+  ctx.fillStyle='#fff';ctx.beginPath();ctx.ellipse(CX-7,CY-4,5,3.5,0,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.ellipse(CX+7,CY-4,5,3.5,0,0,Math.PI*2);ctx.fill();
+  ctx.fillStyle=config.eyeColor;ctx.beginPath();ctx.arc(CX-7,CY-4,2.5,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.arc(CX+7,CY-4,2.5,0,Math.PI*2);ctx.fill();
+  ctx.fillStyle='#000';ctx.beginPath();ctx.arc(CX-7,CY-4,1.3,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.arc(CX+7,CY-4,1.3,0,Math.PI*2);ctx.fill();
+  ctx.strokeStyle=config.hair;ctx.lineWidth=1.8;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(CX-11,CY-9);ctx.lineTo(CX-3,CY-8);ctx.stroke();ctx.beginPath();ctx.moveTo(CX+3,CY-8);ctx.lineTo(CX+11,CY-9);ctx.stroke();
+  ctx.strokeStyle=config.skinDark;ctx.lineWidth=1.2;ctx.beginPath();ctx.moveTo(CX,CY-2);ctx.lineTo(CX-3,CY+5);ctx.lineTo(CX+3,CY+5);ctx.stroke();
+  ctx.strokeStyle=config.skinDark;ctx.lineWidth=1.5;ctx.beginPath();ctx.arc(CX,CY+9,5,0.1*Math.PI,0.9*Math.PI);ctx.stroke();
+  if(config.glasses){ctx.strokeStyle='#888';ctx.lineWidth=1.5;ctx.beginPath();ctx.arc(CX-7,CY-4,6,0,Math.PI*2);ctx.stroke();ctx.beginPath();ctx.arc(CX+7,CY-4,6,0,Math.PI*2);ctx.stroke();ctx.beginPath();ctx.moveTo(CX-1,CY-4);ctx.lineTo(CX+1,CY-4);ctx.stroke();ctx.beginPath();ctx.moveTo(CX-21,CY-5);ctx.lineTo(CX-13,CY-5);ctx.stroke();ctx.beginPath();ctx.moveTo(CX+13,CY-5);ctx.lineTo(CX+21,CY-5);ctx.stroke();}
+  ctx.beginPath();ctx.arc(CX,CY,43,0,Math.PI*2);ctx.strokeStyle=config.rimColor;ctx.lineWidth=2;ctx.stroke();
 }
-
-drawPortrait('p1', {bgLight:'#1a2a3a',bgDark:'#0a1520',skin:'#d4956a',skinLight:'#e8b08a',skinDark:'#b07050',hair:'#8B7355',eyeColor:'#5C8A9B',shirt:'#1a3a5c',hairStyle:'normal',glasses:false,rimColor:'rgba(255,215,0,0.6)'});
-drawPortrait('p2', {bgLight:'#1a2a1a',bgDark:'#0a150a',skin:'#d4a070',skinLight:'#e8b88a',skinDark:'#b07840',hair:'#2a2a2a',eyeColor:'#4a7a4a',shirt:'#2a4a2a',hairStyle:'normal',glasses:true,rimColor:'rgba(0,255,0,0.4)'});
-drawPortrait('p3', {bgLight:'#1a1a3a',bgDark:'#0a0a20',skin:'#dba878',skinLight:'#ecca90',skinDark:'#b88858',hair:'#3a2a1a',eyeColor:'#3a5a8a',shirt:'#888888',hairStyle:'normal',glasses:false,rimColor:'rgba(100,100,255,0.5)'});
-drawPortrait('p4', {bgLight:'#2a1a0a',bgDark:'#150800',skin:'#c8906a',skinLight:'#dca880',skinDark:'#a87050',hair:'#2a2a2a',eyeColor:'#5a4a3a',shirt:'#111111',hairStyle:'receding',glasses:false,rimColor:'rgba(255,120,0,0.5)'});
-drawPortrait('p5', {bgLight:'#2a2a1a',bgDark:'#15150a',skin:'#d09060',skinLight:'#e4a878',skinDark:'#a87040',hair:'#1a1a1a',eyeColor:'#4a4a6a',shirt:'#111122',hairStyle:'bald',glasses:false,rimColor:'rgba(255,165,0,0.5)'});
+drawPortrait('p1',{bgLight:'#1a2a3a',bgDark:'#0a1520',skin:'#d4956a',skinLight:'#e8b08a',skinDark:'#b07050',hair:'#8B7355',eyeColor:'#5C8A9B',shirt:'#1a3a5c',hairStyle:'normal',glasses:false,rimColor:'rgba(255,215,0,0.6)'});
+drawPortrait('p2',{bgLight:'#1a2a1a',bgDark:'#0a150a',skin:'#d4a070',skinLight:'#e8b88a',skinDark:'#b07840',hair:'#2a2a2a',eyeColor:'#4a7a4a',shirt:'#2a4a2a',hairStyle:'normal',glasses:true,rimColor:'rgba(0,255,0,0.4)'});
+drawPortrait('p3',{bgLight:'#1a1a3a',bgDark:'#0a0a20',skin:'#dba878',skinLight:'#ecca90',skinDark:'#b88858',hair:'#3a2a1a',eyeColor:'#3a5a8a',shirt:'#888888',hairStyle:'normal',glasses:false,rimColor:'rgba(100,100,255,0.5)'});
+drawPortrait('p4',{bgLight:'#2a1a0a',bgDark:'#150800',skin:'#c8906a',skinLight:'#dca880',skinDark:'#a87050',hair:'#2a2a2a',eyeColor:'#5a4a3a',shirt:'#111111',hairStyle:'receding',glasses:false,rimColor:'rgba(255,120,0,0.5)'});
+drawPortrait('p5',{bgLight:'#2a2a1a',bgDark:'#15150a',skin:'#d09060',skinLight:'#e4a878',skinDark:'#a87040',hair:'#1a1a1a',eyeColor:'#4a4a6a',shirt:'#111122',hairStyle:'bald',glasses:false,rimColor:'rgba(255,165,0,0.5)'});
 
 // Reveal
 const obs=new IntersectionObserver(en=>en.forEach(e=>{
-  if(e.isIntersecting){e.target.classList.add('visible');
-  if(e.target.querySelector('[data-t]'))animStats()}
+  if(e.isIntersecting){e.target.classList.add('visible');if(e.target.querySelector('[data-t]'))animStats()}
 }),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
@@ -776,14 +868,14 @@ function animStats(){
 }
 
 // 3D Tilt
-document.querySelectorAll('.course-card,.ss-item,.mem-card,.bs-card,.vid-card,.res-card,.legend-card,.tpm-card').forEach(card=>{
+document.querySelectorAll('.course-card,.ss-item,.mem-card,.bs-card,.vid-card,.res-card,.legend-card,.tpm-card,.gt-card').forEach(card=>{
   card.addEventListener('mousemove',e=>{
     const r=card.getBoundingClientRect();
     const x=(e.clientX-r.left-r.width/2)/(r.width/2);
     const y=(e.clientY-r.top-r.height/2)/(r.height/2);
-    card.style.transform=`perspective(800px) rotateY(${x*7}deg) rotateX(${-y*7}deg) translateY(-8px)`;
+    card.style.transform=`perspective(800px) rotateY(${x*7}deg) rotateX(${-y*7}deg) translateY(-6px)`;
   });
-  card.addEventListener('mouseleave',()=>{card.style.transform=''});
+  card.addEventListener('mouseleave',()=>{card.style.transform='';});
 });
 
 // Countdown 7 days
@@ -798,7 +890,7 @@ const end=new Date(Date.now()+7*864e5);
 })();
 
 window.addEventListener('scroll',()=>{document.querySelector('nav').style.padding=scrollY>60?'.6rem 4rem':'1rem 4rem';});
-document.querySelectorAll('.courses-grid .reveal,.ss-grid .reveal,.bs-grid .reveal,.res-grid .reveal').forEach((el,i)=>{el.style.transitionDelay=`${(i%3)*.12}s`;});
+document.querySelectorAll('.courses-grid .reveal,.ss-grid .reveal,.bs-grid .reveal,.res-grid .reveal,.gt-grid .gt-card').forEach((el,i)=>{el.style.transitionDelay=`${(i%3)*.12}s`;});
 </script>
 </body>
 </html>
