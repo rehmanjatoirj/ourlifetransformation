@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Transformation Pakistan – Money Mastery Elite Academy Call Now (03443444154)  </title>
+<title>Transformation Pakistan – Money Mastery Elite Academy</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -64,7 +64,7 @@ h1.hero-title{font-family:'Orbitron',monospace;font-weight:900;line-height:1.05;
 .textbook-image-card{background:linear-gradient(135deg,rgba(0,255,255,.14),rgba(11,11,20,.84));border-color:rgba(0,255,255,.65)}
 .resource-card .resource-line{display:block;font-family:'Orbitron',monospace;font-size:.76rem;letter-spacing:1px;text-transform:uppercase;color:var(--yellow);position:relative;z-index:1}
 .resource-card .resource-box{font-family:'Orbitron',monospace;font-size:.8rem;color:var(--yellow);position:relative;z-index:1}
-.resource-card .resource-card-button{display:block;width:100%;font-family:'Orbitron',monospace;font-size:.72rem;letter-spacing:2px;background:rgba(255,215,0,.12);border:1px solid var(--yellow);color:var(--yellow);padding:.4rem .7rem;margin-top:.6rem;text-transform:uppercase;position:relative;z-index:1}
+.resource-card .resource-card-button{display:block;width:100%;font-family:'Orbitron',monospace;font-size:.72rem;letter-spacing:2px;background:rgba(255,215,0,.12);border:1px solid var(--yellow);color:var(--yellow);padding:.4rem .7rem;margin-top:.6rem;text-transform:uppercase;position:relative;z-index:1;cursor:pointer}
 .resource-card.ai-card{background:linear-gradient(135deg,rgba(255,0,110,.12),rgba(11,11,20,.84));}
 .resource-card.textbook-card{background:linear-gradient(135deg,rgba(0,255,255,.10),rgba(11,11,20,.84));}
 .resource-card.final-card{background:linear-gradient(135deg,rgba(255,215,0,.12),rgba(255,0,110,.08));}
@@ -410,14 +410,14 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
 <canvas id="bg"></canvas>
 
 <nav>
-  <div class="logo">Transformation Pakistan<span>Money Mastery Elite Academy</span></div>
+  <div class="logo">Transformation Pakistan<span>Money Mastery Elite Academy <strong>Call Now (03443444154)</strong></span></div>
   <ul class="nav-links">
     <li><a href="#tp-moment">Our Mission</a></li>
     <li><a href="#legends">Legends</a></li>
     <li><a href="#superskills">Super Skills</a></li>
     <li><a href="#courses">Courses</a></li>
     <li><a href="#free-resources">Free Resources</a></li>
-    <li><a href="#membership">Join Now</a></li>
+    <li><a class="payment-trigger" href="#membership">Join Now</a></li>
   </ul>
   <button class="nav-btn" onclick="document.getElementById('membership').scrollIntoView({behavior:'smooth'})">Join Elite →</button>
   <a class="nav-whatsapp" href="https://wa.me/923702249302" target="_blank" rel="noopener">WhatsApp</a>
@@ -461,7 +461,7 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
     <div class="resource-card final-card">
       <span class="resource-label">CERTIFICATION</span>
       <h3>Became certified ai digital marketer: Education from Harvard University, Harvard Business School and other top universities and mentors with Certification</h3>
-      <span class="resource-card-button">Join Now</span>
+      <button class="resource-card-button payment-trigger" type="button">Join Now</button>
     </div>
     <div class="resource-card ai-card">
       <span class="resource-label">BEST AI TRADER</span>
@@ -499,7 +499,7 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
   </div>
   <div class="urgent">
     <div class="urgent-dot"></div>
-    <span>🔥 <strong>ONE WEEK ONLY</strong> — Elite Membership Starting in Pakistan — <strong>PKR 1,500</strong></span>
+    <span>🔥 <strong>ONE WEEK ONLY</strong> — Elite Membership Starting in Pakistan — <strong>PKR 1,500</strong> — <strong>Call/WhatsApp Now: 03443444154</strong></span>
   </div>
   <p class="hero-sub">
     <strong>Freelancing with AI (AI Skills for Clients) · Digital Product Business (Create Once, Sell Forever) · Ebook Business (Create Best Sellers with AI & Chat GPT) · Amazon Selling (Amazon FBA & Private Label) · Selling in Ebay (Ebay UK & Pakistan) · Chat GPT Money Mastery (Make Money with AI Tools) · Digital Marketing (SEO, Ads, Funnels, Social Media) · Ecommerce (Store Setup & Scaling) · Amazon FBA (Product Launch & Growth) · Ebay UK & Pakistan (Marketplace Selling)</strong><br>
@@ -1035,7 +1035,7 @@ document.querySelectorAll('.courses-grid .reveal,.ss-grid .reveal,.bs-grid .reve
 // Open payment details from every Join Now or Get Lifetime membership button.
 const paymentModal=document.getElementById('payment-modal');
 const closePaymentModal=()=>{paymentModal.classList.remove('open');paymentModal.setAttribute('aria-hidden','true');};
-document.querySelectorAll('button').forEach(button=>{
+document.querySelectorAll('button, a, .payment-trigger').forEach(button=>{
   if(/join now|get lifetime/i.test(button.textContent)){
     button.addEventListener('click',event=>{
       event.preventDefault();
