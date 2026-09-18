@@ -54,6 +54,8 @@ h1.hero-title{font-family:'Orbitron',monospace;font-weight:900;line-height:1.05;
 .resource-card::after{content:'';position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--yellow),var(--pink),var(--cyan));box-shadow:0 0 16px var(--yellow)}
 .resource-card h3{font-family:'Orbitron',monospace;font-size:clamp(.8rem,1.7vw,1.05rem);font-weight:900;color:#fff;position:relative;z-index:1;line-height:1.4;margin-bottom:.6rem;text-align:center}
 .resource-card p{font-family:'Rajdhani',sans-serif;font-size:.88rem;line-height:1.7;color:rgba(255,255,255,.76);position:relative;z-index:1;text-align:center}
+.membership-note{display:inline-block;margin-top:.7rem;padding:.6rem 1rem;background:rgba(255,215,0,.08);border:1px solid rgba(255,215,0,.35);color:var(--yellow);font-family:'Orbitron',monospace;font-size:clamp(.8rem,1.2vw,1rem);letter-spacing:1.8px;text-transform:uppercase;font-weight:700;text-align:center;box-shadow:0 0 16px rgba(255,215,0,.12)}
+.membership-note-box{display:inline-block;margin-top:.7rem;padding:.5rem .8rem;background:rgba(255,215,0,.08);border:1px solid rgba(255,215,0,.35);color:var(--yellow);font-family:'Orbitron',monospace;font-size:clamp(.7rem,1vw,.9rem);letter-spacing:1.6px;text-transform:uppercase;font-weight:700;text-align:center;box-shadow:0 0 12px rgba(255,215,0,.08)}
 .resource-card .resource-label{display:block;font-family:'Orbitron',monospace;font-size:.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);position:relative;z-index:1;margin-bottom:.45rem}
 .resource-image-frame{width:100%;max-width:900px;min-height:280px;height:auto;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(255,255,255,.04),rgba(255,215,0,.12));border:1px solid rgba(255,215,0,.45);border-radius:12px;box-shadow:0 0 20px rgba(255,215,0,.26);padding:.5rem;overflow:hidden;margin-bottom:.75rem;position:relative;z-index:1}
 .resource-image-gallery{display:flex;flex-wrap:nowrap;align-items:center;justify-content:flex-start;gap:.8rem;width:100%;overflow-x:auto;overflow-y:hidden;background:transparent;scrollbar-width:thin;scrollbar-color:var(--yellow) rgba(255,255,255,.06);scroll-snap-type:x mandatory;padding:.2rem 0}
@@ -456,11 +458,18 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
     <div class="resource-card ai-card">
       <span class="resource-label">AI MASTER CLASS</span>
       <h3>More Than 4 Hours Paid AI Master Class by International Mentor</h3>
+      <div class="membership-note-box">For Membership Call/Whatsapp 03443444154</div>
       <span class="resource-line">Free for Our Members — With Certification</span>
     </div>
     <div class="resource-card final-card">
       <span class="resource-label">CERTIFICATION</span>
+      <div class="resource-image-frame">
+        <div class="resource-image-gallery">
+          <img class="resource-image" src="./Certificate.jpeg" alt="Certification Certificate">
+        </div>
+      </div>
       <h3>Became certified ai digital marketer: Education from Harvard University, Harvard Business School and other top universities and mentors with Certification</h3>
+      <div class="membership-note-box">For Membership Call/Whatsapp 03443444154</div>
       <button class="resource-card-button payment-trigger" type="button">Join Now</button>
     </div>
     <div class="resource-card ai-card">
@@ -488,12 +497,55 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
     </div>
     <div class="resource-card ai-card">
       <span class="resource-label">ENGLISH Speaking CLUB PAKISTAN</span>
-      <h3>Learn English through world's best English teaching courses like Duolingo, birtlz English, Harvard and other top English teachers</h3>
+      <div class="resource-image-frame">
+        <div class="resource-image-gallery">
+          <img class="resource-image" src="./Berlitz-English-Level-5.PNG" alt="Berlitz English Level 5">
+          <img class="resource-image" src="./Duolongo.PNG" alt="Duolingo English">
+          <img class="resource-image" src="./Macmillan english.PNG" alt="Macmillan English">
+        </div>
+      </div>
+      <h3>Learn English through world's best English teaching courses like Duolingo, Berlitz English, Macmillan and other top English teachers</h3>
       <span class="resource-line">Free For Our Members</span>
     </div>
     <div class="resource-card final-card">
       <span class="resource-label">IELTS 8 Bands CLUB</span>
+      <div class="resource-image-frame">
+        <div class="resource-image-gallery">
+          <img class="resource-image" src="./IELETS 1.PNG" alt="IELTS 1">
+          <img class="resource-image" src="./Cambridge IELETS.PNG" alt="Cambridge IELTS">
+        </div>
+      </div>
       <h3>IELTS 8 Band Score</h3>
+      <span class="resource-line">Free For Our Members</span>
+    </div>
+
+    <div class="resource-card ai-card">
+      <span class="resource-label">Canva With AI Full Course</span>
+      <div class="resource-image-frame">
+        <div class="resource-image-gallery">
+          <img class="resource-image" src="./Canva.PNG" alt="Canva AI Course">
+          <img class="resource-image" src="./Canva 2.PNG" alt="Canva AI Course 2">
+        </div>
+      </div>
+      <h3>Canvas full course more than 20 hours by international mentors</h3>
+      <span class="resource-line">Free For Our Members</span>
+    </div>
+
+    <div class="resource-card final-card">
+      <span class="resource-label">Freelancing</span>
+      <div class="resource-image-frame">
+        <div class="resource-image-gallery">
+          <img class="resource-image" src="./freelance 2.PNG" alt="Freelance 2">
+          <img class="resource-image" src="./freelance 3.PNG" alt="Freelance 3">
+        </div>
+      </div>
+      <h3>freelancing full course by international mentors</h3>
+      <span class="resource-line">Free For Our Members</span>
+    </div>
+
+    <div class="resource-card ai-card">
+      <span class="resource-label">Python Full Course</span>
+      <h3>Python Full course by international mentors</h3>
       <span class="resource-line">Free For Our Members</span>
     </div>
   </div>
@@ -541,6 +593,7 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
   <div class="gt-eyebrow reveal">What You Will Learn Inside</div>
   <h2 class="s-title reveal" style="text-align:center;margin-bottom:.4rem">Trending <span class="y">Topics</span> — <span class="p">Inside Your Membership</span></h2>
   <p class="gt-subhead reveal">Yahi woh topics hain jo log YouTube per search karte hain — sab kuch ek jagah milega</p>
+  <div class="membership-note reveal">For Membership Call/Whatsapp 03443444154</div>
 
   <div class="gt-grid reveal">
 
@@ -632,6 +685,7 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
   <div class="s-tag reveal" style="justify-content:center">Our Core Mission</div>
   <h2 class="s-title reveal" style="text-align:center">What Is The <span class="y">Transformation</span><br><span class="p">Pakistan Moment?</span></h2>
   <div class="s-line reveal" style="margin:0 auto 1rem"></div>
+  <div class="membership-note reveal">For Membership Call/Whatsapp 03443444154</div>
 
   <div class="tpm-quote reveal">
     <p class="tpm-quote-text">
@@ -675,6 +729,7 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
   <h2 class="s-title reveal" style="text-align:center">Billionaires Who <span class="y">Mastered</span> These <span class="p">Skills</span></h2>
   <div class="s-line reveal" style="margin:0 auto 2rem"></div>
   <p class="legends-intro reveal"><strong>Elon Musk. Bill Gates. Mark Zuckerberg. Steve Jobs. Jeff Bezos.</strong><br>They all mastered ONE thing the world never taught you — Money Mastery, Digital Business & Mind Control.<br>Now YOUR time through <strong>Transformation Pakistan.</strong></p>
+  <div class="membership-note reveal">For Membership Call/Whatsapp 03443444154</div>
   <div class="legends-grid reveal">
     <div class="legend-card">
       <canvas class="legend-portrait" id="p1" width="90" height="90"></canvas>
@@ -750,6 +805,7 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
     <div class="ss-badge">⚡ HIGHLIGHT — MUST SEE</div>
     <h2 class="ss-title"><span class="line1">MONEY MASTERY</span><span class="line2">SUPER SKILLS</span></h2>
     <p class="ss-desc">Everything you need to master money, mind, and life — all in ONE membership. Elon Musk, Bill Gates, Zuckerberg, Steve Jobs — they all mastered these super skills. Now YOUR time through Transformation Pakistan.</p>
+    <div class="membership-note reveal">For Membership Call/Whatsapp 03443444154</div>
     <div class="ss-grid">
       <div class="ss-item"><span class="ss-item-icon">💰</span><div class="ss-item-name">Money Mastery</div></div>
       <div class="ss-item"><span class="ss-item-icon">🌐</span><div class="ss-item-name">Digital Marketing</div></div>
@@ -773,6 +829,7 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
   <div class="s-tag reveal">Everything In One Membership</div>
   <h2 class="s-title reveal"><span class="y">Some Courses</span> <span class="p">INCLUDED</span></h2>
   <div class="s-line reveal"></div>
+  <div class="membership-note reveal">For Membership Call/Whatsapp 03443444154</div>
   <div class="courses-grid">
     <div class="course-card reveal"><span class="c-icon">🌐</span><div class="c-name">Digital Marketing</div><p class="c-desc">Complete digital marketing mastery — SEO, social media, paid ads, funnels and brand building.</p></div>
     <div class="course-card reveal"><span class="c-icon">🛒</span><div class="c-name">Ecommerce Mastery</div><p class="c-desc">Build and scale your ecommerce store from zero to profit with proven Pakistani market strategies.</p></div>
@@ -796,6 +853,7 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
   <div class="s-tag reveal" style="justify-content:center">Bonus — Included Free</div>
   <h2 class="s-title reveal" style="text-align:center">Massive <span class="c">FREE</span> <span class="y">Resources</span> Bundle</h2>
   <div class="s-line reveal" style="margin:0 auto 1rem"></div>
+  <div class="membership-note reveal">For Membership Call/Whatsapp 03443444154</div>
   <p class="reveal" style="text-align:center;color:rgba(255,255,255,.6);font-size:1rem;max-width:650px;margin:0 auto;line-height:1.8">Thousands of free learning resources — courses, design books, and productivity templates — all curated for you.</p>
   <div class="res-grid">
     <div class="res-card reveal"><span class="res-icon">🎓</span><span class="res-count">1,700</span><div class="res-name">Free Online Courses</div><p class="res-desc">Free courses from Harvard, MIT, Stanford and top universities around the world — curated for members.</p><span class="res-tag">Top Universities</span></div>
@@ -855,6 +913,7 @@ footer{background:#060606;border-top:1px solid rgba(255,215,0,.1);padding:4rem;p
   <div class="s-tag reveal" style="justify-content:center">First Time in Pakistan</div>
   <h2 class="s-title reveal" style="text-align:center">JOIN <span class="p">ELITE</span> <span class="y">MEMBERSHIP</span></h2>
   <p class="reveal" style="text-align:center;color:rgba(255,255,255,.6);margin-bottom:2rem;font-size:.9rem">Starting in Pakistan — Limited Time Only</p>
+  <div class="membership-note reveal">For Membership Call/Whatsapp 03443444154</div>
   <div class="mem-urgent reveal"><div class="mem-urgent-dot"></div><div class="mem-urgent-text">🚨 <strong>ONE WEEK ONLY</strong> — Join Now Before Price Goes Up to PKR 5,000</div></div>
   <div class="mem-grid">
     <div class="mem-card silver reveal">
