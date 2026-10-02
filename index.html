@@ -1145,5 +1145,51 @@ paymentModal.querySelector('.payment-close').addEventListener('click',closePayme
 paymentModal.addEventListener('click',event=>{if(event.target===paymentModal)closePaymentModal();});
 document.addEventListener('keydown',event=>{if(event.key==='Escape')closePaymentModal();});
 </script>
-</body>
+<script>
+(function () {
+  function ev(name, data) {
+    if (typeof fbq === 'function') { fbq('track', name, data || {}); }
+  }
+  var DATA = { content_name: 'Membership Bundle', value: 1500, currency: 'PKR' };
+
+  // ViewContent: first time the membership section is visible
+  var mem = document.getElementById('membership');
+  if (mem && 'IntersectionObserver' in window) {
+    var seen = false;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && !seen) {
+          seen = true;
+          ev('ViewContent', DATA);
+          io.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+    io.observe(mem);
+  }
+
+  // InitiateCheckout: payment popup opens
+  var modal = document.getElementById('payment-modal');
+  if (modal) {
+    var wasOpen = modal.classList.contains('open');
+    new MutationObserver(function () {
+      var isOpen = modal.classList.contains('open');
+      if (isOpen && !wasOpen) { ev('InitiateCheckout', DATA); }
+      wasOpen = isOpen;
+    }).observe(modal, { attributes: true, attributeFilter: ['class'] });
+  }
+
+  // Lead / Contact: clicks on WhatsApp and call buttons
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    if (!t || !t.closest) { return; }
+    if (t.closest('a.send-whatsapp')) {
+      ev('Lead', DATA);
+    } else if (t.closest('a.call-now, a.nav-whatsapp, .whatsapp-link')) {
+      ev('Contact', { content_name: 'Membership Bundle' });
+    }
+  });
+})();
+</script>
+</body> 
 </html>
