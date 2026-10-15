@@ -225,7 +225,7 @@ src="https://www.facebook.com/tr?id=1645145230333251&ev=PageView&noscript=1"/></
     var t = e.target;
     if (!t || !t.closest) { return; }
     if (t.closest('a.send-whatsapp')) { ev('Lead', DATA); }
-    else if (t.closest('a.call-now, a.whatsapp-link')) { ev('Contact', { content_name: 'Course Bundle' }); }
+    else if (t.closest('a.call-now, a.whatsapp-link')) { ev('Contact',DATA ); }
   });
 })();
 </script>
